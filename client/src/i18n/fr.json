@@ -31,6 +31,7 @@
     "status": "Statut",
     "finished": "Terminé",
     "scheduled": "À venir",
+    "cancelled": "Annulé",
     "actions": "Actions",
     "required": "Champ requis"
   },

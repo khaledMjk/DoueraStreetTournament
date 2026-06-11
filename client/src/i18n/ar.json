@@ -31,6 +31,7 @@
     "status": "الحالة",
     "finished": "انتهت",
     "scheduled": "قادمة",
+    "cancelled": "ملغاة",
     "actions": "إجراءات",
     "required": "حقل إلزامي"
   },
