@@ -1,0 +1,26 @@
+[
+  {
+    "id": "n1",
+    "date": "2026-05-01",
+    "title": "Coup d'envoi du Tournoi de Rue de Douéra 2026 !",
+    "titleAr": "انطلاق بطولة دويرة الشارعية 2026!",
+    "body": "Le tournoi débute ce week-end avec 8 équipes réparties en 2 groupes. Bonne chance à tous les participants !",
+    "bodyAr": "تنطلق البطولة نهاية هذا الأسبوع بمشاركة 8 فرق موزعة على مجموعتين. حظا موفقا لجميع المشاركين!"
+  },
+  {
+    "id": "n2",
+    "date": "2026-05-03",
+    "title": "Résultats de la Journée 1",
+    "titleAr": "نتائج الجولة الأولى",
+    "body": "Étoile de Douéra s'impose 2-1 face à AS Khraicia. Amel Bouchaoui démarre fort avec une victoire 2-0 contre Nadi El Achour.",
+    "bodyAr": "فازت نجمة دويرة 2-1 على الجمعية الرياضية خريسية. أمل بوشاوي ينطلق بقوة بفوزه 2-0 على نادي العاشور."
+  },
+  {
+    "id": "n3",
+    "date": "2026-05-17",
+    "title": "Fin de la phase de groupes",
+    "titleAr": "نهاية مرحلة المجموعات",
+    "body": "La phase de groupes est terminée ! Étoile de Douéra termine 1ère du groupe A et Amel Bouchaoui 1er du groupe B. Les demi-finales sont prévues le 14 juin.",
+    "bodyAr": "انتهت مرحلة المجموعات! تصدرت نجمة دويرة المجموعة أ وتصدر أمل بوشاوي المجموعة ب. موعدنا في نصف النهائي يوم 14 جوان."
+  }
+]

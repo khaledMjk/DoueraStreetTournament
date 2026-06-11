@@ -1,0 +1,130 @@
+[
+  {
+    "id": "t1",
+    "name": "Étoile de Douéra",
+    "nameAr": "نجمة دويرة",
+    "shortName": "ED",
+    "group": "A",
+    "color": "#1f7a3d",
+    "players": [
+      { "id": "p101", "name": "Karim Belkacem", "nameAr": "كريم بلقاسم", "number": 1, "position": "GK" },
+      { "id": "p102", "name": "Yacine Boudiaf", "nameAr": "ياسين بوضياف", "number": 5, "position": "DEF" },
+      { "id": "p103", "name": "Sofiane Amrani", "nameAr": "سفيان عمراني", "number": 7, "position": "MID" },
+      { "id": "p104", "name": "Walid Cherif", "nameAr": "وليد شريف", "number": 9, "position": "FWD" },
+      { "id": "p105", "name": "Riad Hamidi", "nameAr": "رياض حميدي", "number": 10, "position": "FWD" },
+      { "id": "p106", "name": "Mehdi Saadi", "nameAr": "مهدي سعدي", "number": 11, "position": "MID" }
+    ]
+  },
+  {
+    "id": "t2",
+    "name": "AS Khraicia",
+    "nameAr": "الجمعية الرياضية خريسية",
+    "shortName": "ASK",
+    "group": "A",
+    "color": "#1d4ed8",
+    "players": [
+      { "id": "p201", "name": "Anis Ferhat", "nameAr": "أنيس فرحات", "number": 1, "position": "GK" },
+      { "id": "p202", "name": "Bilal Touati", "nameAr": "بلال تواتي", "number": 4, "position": "DEF" },
+      { "id": "p203", "name": "Nassim Brahimi", "nameAr": "نسيم إبراهيمي", "number": 8, "position": "MID" },
+      { "id": "p204", "name": "Houssem Zerrouki", "nameAr": "حسام زروقي", "number": 9, "position": "FWD" },
+      { "id": "p205", "name": "Adel Mansouri", "nameAr": "عادل منصوري", "number": 10, "position": "MID" },
+      { "id": "p206", "name": "Samy Boukhalfa", "nameAr": "سامي بوخلفة", "number": 11, "position": "FWD" }
+    ]
+  },
+  {
+    "id": "t3",
+    "name": "Najah Mahelma",
+    "nameAr": "نجاح مهلمة",
+    "shortName": "NM",
+    "group": "A",
+    "color": "#b91c1c",
+    "players": [
+      { "id": "p301", "name": "Reda Larbi", "nameAr": "رضا العربي", "number": 1, "position": "GK" },
+      { "id": "p302", "name": "Fares Guermat", "nameAr": "فارس قرمات", "number": 6, "position": "DEF" },
+      { "id": "p303", "name": "Amine Khelifi", "nameAr": "أمين خليفي", "number": 7, "position": "MID" },
+      { "id": "p304", "name": "Tarek Benali", "nameAr": "طارق بن علي", "number": 9, "position": "FWD" },
+      { "id": "p305", "name": "Lyes Bouzidi", "nameAr": "لياس بوزيدي", "number": 10, "position": "MID" },
+      { "id": "p306", "name": "Nabil Saidi", "nameAr": "نبيل سعيدي", "number": 11, "position": "FWD" }
+    ]
+  },
+  {
+    "id": "t4",
+    "name": "Chabab Rahmania",
+    "nameAr": "شباب الرحمانية",
+    "shortName": "CR",
+    "group": "A",
+    "color": "#ea580c",
+    "players": [
+      { "id": "p401", "name": "Hicham Drid", "nameAr": "هشام دريد", "number": 1, "position": "GK" },
+      { "id": "p402", "name": "Ayoub Meziane", "nameAr": "أيوب مزيان", "number": 5, "position": "DEF" },
+      { "id": "p403", "name": "Karim Boudjellal", "nameAr": "كريم بوجلال", "number": 8, "position": "MID" },
+      { "id": "p404", "name": "Sami Yahiaoui", "nameAr": "سامي يحياوي", "number": 9, "position": "FWD" },
+      { "id": "p405", "name": "Othmane Rezki", "nameAr": "عثمان رزقي", "number": 10, "position": "FWD" },
+      { "id": "p406", "name": "Djamel Hadji", "nameAr": "جمال حاجي", "number": 11, "position": "MID" }
+    ]
+  },
+  {
+    "id": "t5",
+    "name": "Widad Douéra",
+    "nameAr": "وداد دويرة",
+    "shortName": "WD",
+    "group": "B",
+    "color": "#7c3aed",
+    "players": [
+      { "id": "p501", "name": "Younes Belaid", "nameAr": "يونس بلعيد", "number": 1, "position": "GK" },
+      { "id": "p502", "name": "Ilyes Cherguia", "nameAr": "الياس شرقية", "number": 4, "position": "DEF" },
+      { "id": "p503", "name": "Mounir Kaci", "nameAr": "منير كسي", "number": 7, "position": "MID" },
+      { "id": "p504", "name": "Zakaria Slimani", "nameAr": "زكريا سليماني", "number": 9, "position": "FWD" },
+      { "id": "p505", "name": "Aymen Bouras", "nameAr": "أيمن بوراس", "number": 10, "position": "FWD" },
+      { "id": "p506", "name": "Nadir Hamdani", "nameAr": "نذير حمداني", "number": 11, "position": "MID" }
+    ]
+  },
+  {
+    "id": "t6",
+    "name": "Olympique Soumaa",
+    "nameAr": "أولمبيك الصومعة",
+    "shortName": "OS",
+    "group": "B",
+    "color": "#0891b2",
+    "players": [
+      { "id": "p601", "name": "Abdou Lakhdari", "nameAr": "عبدو لخضاري", "number": 1, "position": "GK" },
+      { "id": "p602", "name": "Farid Benamara", "nameAr": "فريد بن عمارة", "number": 5, "position": "DEF" },
+      { "id": "p603", "name": "Yassine Touil", "nameAr": "ياسين تويل", "number": 8, "position": "MID" },
+      { "id": "p604", "name": "Khaled Benyahia", "nameAr": "خالد بن يحيى", "number": 9, "position": "FWD" },
+      { "id": "p605", "name": "Rabah Aitouche", "nameAr": "رابح آيتوش", "number": 10, "position": "FWD" },
+      { "id": "p606", "name": "Hamza Bensalem", "nameAr": "حمزة بن سالم", "number": 11, "position": "MID" }
+    ]
+  },
+  {
+    "id": "t7",
+    "name": "Amel Bouchaoui",
+    "nameAr": "أمل بوشاوي",
+    "shortName": "AB",
+    "group": "B",
+    "color": "#ca8a04",
+    "players": [
+      { "id": "p701", "name": "Sid Ali Merabet", "nameAr": "سيد علي مرابط", "number": 1, "position": "GK" },
+      { "id": "p702", "name": "Walid Bencheikh", "nameAr": "وليد بن الشيخ", "number": 4, "position": "DEF" },
+      { "id": "p703", "name": "Oussama Rahmani", "nameAr": "أسامة رحماني", "number": 7, "position": "MID" },
+      { "id": "p704", "name": "Kamel Tahar", "nameAr": "كمال طاهر", "number": 9, "position": "FWD" },
+      { "id": "p705", "name": "Idriss Boukerma", "nameAr": "إدريس بوكرمة", "number": 10, "position": "FWD" },
+      { "id": "p706", "name": "Massinissa Idir", "nameAr": "ماسينيسا إدير", "number": 11, "position": "MID" }
+    ]
+  },
+  {
+    "id": "t8",
+    "name": "Nadi El Achour",
+    "nameAr": "نادي العاشور",
+    "shortName": "NA",
+    "group": "B",
+    "color": "#4d7c0f",
+    "players": [
+      { "id": "p801", "name": "Brahim Yousfi", "nameAr": "إبراهيم يوسفي", "number": 1, "position": "GK" },
+      { "id": "p802", "name": "Imad Cherifi", "nameAr": "عماد شريفي", "number": 5, "position": "DEF" },
+      { "id": "p803", "name": "Younes Belkadi", "nameAr": "يونس بلقاضي", "number": 8, "position": "MID" },
+      { "id": "p804", "name": "Toufik Messaoudi", "nameAr": "توفيق مسعودي", "number": 9, "position": "FWD" },
+      { "id": "p805", "name": "Anouar Djebbar", "nameAr": "أنور جبار", "number": 10, "position": "MID" },
+      { "id": "p806", "name": "Lotfi Bensaid", "nameAr": "لطفي بن سعيد", "number": 11, "position": "FWD" }
+    ]
+  }
+]
