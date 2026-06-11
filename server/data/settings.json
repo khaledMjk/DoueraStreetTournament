@@ -1,14 +1,16 @@
 {
-  "name": "Tournoi de Rue de Douéra 2026",
-  "nameAr": "بطولة دويرة الشارعية 2026",
-  "shortName": "Douéra Street Tournament",
+  "name": "Grand Tournoi des Quartiers de Douéra",
+  "nameAr": "بطولة دويرة الكبرى للأحياء",
+  "shortName": "Tournoi Douéra",
   "season": "2026",
-  "startDate": "2026-05-01",
-  "location": "Douéra, Alger",
-  "locationAr": "دويرة، الجزائر",
-  "format": "2 groupes de 4 équipes (matchs aller), demi-finales et finale",
-  "formatAr": "مجموعتان من 4 فرق (مباريات ذهاب)، نصف النهائي والنهائي",
+  "startDate": "2026-06-05",
+  "location": "Stade Municipal Abdelkader Houni, Douéra",
+  "locationAr": "الملعب البلدي عبد القادر حوني، الدويرة",
+  "format": "2e édition — 12 groupes de 4 équipes (48 équipes), phase de groupes en matchs aller sur 3 journées, suivie des phases à élimination directe",
+  "formatAr": "الطبعة الثانية — 12 مجموعة من 4 فرق (48 فريقًا)، مرحلة المجموعات بنظام الذهاب على 3 جولات، تليها أدوار الإقصاء المباشر",
   "organizer": "Comité du Tournoi de Douéra",
   "organizerAr": "لجنة تنظيم بطولة دويرة",
-  "contactFacebook": "https://www.facebook.com/share/1XpNcc2Wty/?mibextid=wwXIfr"
+  "contactFacebook": "https://www.facebook.com/share/1XpNcc2Wty/?mibextid=wwXIfr",
+  "contactTiktok": "https://www.tiktok.com/@tournoidouera",
+  "contactPhone": "+213 542 90 39 48"
 }

@@ -23,16 +23,37 @@ export default function Footer() {
           </div>
         </div>
 
-        {settings?.contactFacebook && (
-          <a
-            href={settings.contactFacebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/80 hover:border-gold-400 hover:text-gold-300 transition-colors"
-          >
-            Facebook
-          </a>
-        )}
+        <div className="flex flex-wrap items-center gap-2">
+          {settings?.contactFacebook && (
+            <a
+              href={settings.contactFacebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/80 hover:border-gold-400 hover:text-gold-300 transition-colors"
+            >
+              Facebook
+            </a>
+          )}
+          {settings?.contactTiktok && (
+            <a
+              href={settings.contactTiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/80 hover:border-gold-400 hover:text-gold-300 transition-colors"
+            >
+              TikTok
+            </a>
+          )}
+          {settings?.contactPhone && (
+            <a
+              href={`tel:${settings.contactPhone.replace(/\s+/g, "")}`}
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/80 hover:border-gold-400 hover:text-gold-300 transition-colors"
+              dir="ltr"
+            >
+              {settings.contactPhone}
+            </a>
+          )}
+        </div>
       </div>
       <div className="border-t border-white/10 py-3 text-center text-xs text-white/40">
         © {settings?.season || "2026"} — {isAr ? settings?.nameAr : settings?.name}

@@ -1,130 +1,436 @@
 [
   {
     "id": "t1",
-    "name": "Étoile de Douéra",
-    "nameAr": "نجمة دويرة",
-    "shortName": "ED",
+    "name": "WR Performance",
+    "nameAr": "WR Performance",
+    "shortName": "WRP",
     "group": "A",
-    "color": "#1f7a3d",
-    "players": [
-      { "id": "p101", "name": "Karim Belkacem", "nameAr": "كريم بلقاسم", "number": 1, "position": "GK" },
-      { "id": "p102", "name": "Yacine Boudiaf", "nameAr": "ياسين بوضياف", "number": 5, "position": "DEF" },
-      { "id": "p103", "name": "Sofiane Amrani", "nameAr": "سفيان عمراني", "number": 7, "position": "MID" },
-      { "id": "p104", "name": "Walid Cherif", "nameAr": "وليد شريف", "number": 9, "position": "FWD" },
-      { "id": "p105", "name": "Riad Hamidi", "nameAr": "رياض حميدي", "number": 10, "position": "FWD" },
-      { "id": "p106", "name": "Mehdi Saadi", "nameAr": "مهدي سعدي", "number": 11, "position": "MID" }
-    ]
+    "color": "#ab2b2b",
+    "players": []
   },
   {
     "id": "t2",
-    "name": "AS Khraicia",
-    "nameAr": "الجمعية الرياضية خريسية",
-    "shortName": "ASK",
+    "name": "El Riyacha",
+    "nameAr": "الرياشة",
+    "shortName": "RYC",
     "group": "A",
-    "color": "#1d4ed8",
-    "players": [
-      { "id": "p201", "name": "Anis Ferhat", "nameAr": "أنيس فرحات", "number": 1, "position": "GK" },
-      { "id": "p202", "name": "Bilal Touati", "nameAr": "بلال تواتي", "number": 4, "position": "DEF" },
-      { "id": "p203", "name": "Nassim Brahimi", "nameAr": "نسيم إبراهيمي", "number": 8, "position": "MID" },
-      { "id": "p204", "name": "Houssem Zerrouki", "nameAr": "حسام زروقي", "number": 9, "position": "FWD" },
-      { "id": "p205", "name": "Adel Mansouri", "nameAr": "عادل منصوري", "number": 10, "position": "MID" },
-      { "id": "p206", "name": "Samy Boukhalfa", "nameAr": "سامي بوخلفة", "number": 11, "position": "FWD" }
-    ]
+    "color": "#2bab50",
+    "players": []
   },
   {
     "id": "t3",
-    "name": "Najah Mahelma",
-    "nameAr": "نجاح مهلمة",
-    "shortName": "NM",
+    "name": "Mohamed Chaouchi",
+    "nameAr": "محمد شاوشي",
+    "shortName": "MCH",
     "group": "A",
-    "color": "#b91c1c",
-    "players": [
-      { "id": "p301", "name": "Reda Larbi", "nameAr": "رضا العربي", "number": 1, "position": "GK" },
-      { "id": "p302", "name": "Fares Guermat", "nameAr": "فارس قرمات", "number": 6, "position": "DEF" },
-      { "id": "p303", "name": "Amine Khelifi", "nameAr": "أمين خليفي", "number": 7, "position": "MID" },
-      { "id": "p304", "name": "Tarek Benali", "nameAr": "طارق بن علي", "number": 9, "position": "FWD" },
-      { "id": "p305", "name": "Lyes Bouzidi", "nameAr": "لياس بوزيدي", "number": 10, "position": "MID" },
-      { "id": "p306", "name": "Nabil Saidi", "nameAr": "نبيل سعيدي", "number": 11, "position": "FWD" }
-    ]
+    "color": "#762bab",
+    "players": []
   },
   {
     "id": "t4",
-    "name": "Chabab Rahmania",
-    "nameAr": "شباب الرحمانية",
-    "shortName": "CR",
+    "name": "La Placette (Ancienne)",
+    "nameAr": "لابلاسات القديمة",
+    "shortName": "LPA",
     "group": "A",
-    "color": "#ea580c",
-    "players": [
-      { "id": "p401", "name": "Hicham Drid", "nameAr": "هشام دريد", "number": 1, "position": "GK" },
-      { "id": "p402", "name": "Ayoub Meziane", "nameAr": "أيوب مزيان", "number": 5, "position": "DEF" },
-      { "id": "p403", "name": "Karim Boudjellal", "nameAr": "كريم بوجلال", "number": 8, "position": "MID" },
-      { "id": "p404", "name": "Sami Yahiaoui", "nameAr": "سامي يحياوي", "number": 9, "position": "FWD" },
-      { "id": "p405", "name": "Othmane Rezki", "nameAr": "عثمان رزقي", "number": 10, "position": "FWD" },
-      { "id": "p406", "name": "Djamel Hadji", "nameAr": "جمال حاجي", "number": 11, "position": "MID" }
-    ]
+    "color": "#ab9b2b",
+    "players": []
   },
   {
     "id": "t5",
-    "name": "Widad Douéra",
-    "nameAr": "وداد دويرة",
-    "shortName": "WD",
+    "name": "El Ghaouasa Essafra",
+    "nameAr": "الغواصة الصفراء",
+    "shortName": "GES",
     "group": "B",
-    "color": "#7c3aed",
-    "players": [
-      { "id": "p501", "name": "Younes Belaid", "nameAr": "يونس بلعيد", "number": 1, "position": "GK" },
-      { "id": "p502", "name": "Ilyes Cherguia", "nameAr": "الياس شرقية", "number": 4, "position": "DEF" },
-      { "id": "p503", "name": "Mounir Kaci", "nameAr": "منير كسي", "number": 7, "position": "MID" },
-      { "id": "p504", "name": "Zakaria Slimani", "nameAr": "زكريا سليماني", "number": 9, "position": "FWD" },
-      { "id": "p505", "name": "Aymen Bouras", "nameAr": "أيمن بوراس", "number": 10, "position": "FWD" },
-      { "id": "p506", "name": "Nadir Hamdani", "nameAr": "نذير حمداني", "number": 11, "position": "MID" }
-    ]
+    "color": "#2b96ab",
+    "players": []
   },
   {
     "id": "t6",
-    "name": "Olympique Soumaa",
-    "nameAr": "أولمبيك الصومعة",
-    "shortName": "OS",
+    "name": "Équipe El Ikhwa",
+    "nameAr": "فريق الإخوة",
+    "shortName": "IKH",
     "group": "B",
-    "color": "#0891b2",
-    "players": [
-      { "id": "p601", "name": "Abdou Lakhdari", "nameAr": "عبدو لخضاري", "number": 1, "position": "GK" },
-      { "id": "p602", "name": "Farid Benamara", "nameAr": "فريد بن عمارة", "number": 5, "position": "DEF" },
-      { "id": "p603", "name": "Yassine Touil", "nameAr": "ياسين تويل", "number": 8, "position": "MID" },
-      { "id": "p604", "name": "Khaled Benyahia", "nameAr": "خالد بن يحيى", "number": 9, "position": "FWD" },
-      { "id": "p605", "name": "Rabah Aitouche", "nameAr": "رابح آيتوش", "number": 10, "position": "FWD" },
-      { "id": "p606", "name": "Hamza Bensalem", "nameAr": "حمزة بن سالم", "number": 11, "position": "MID" }
-    ]
+    "color": "#ab2b70",
+    "players": []
   },
   {
     "id": "t7",
-    "name": "Amel Bouchaoui",
-    "nameAr": "أمل بوشاوي",
-    "shortName": "AB",
+    "name": "Aïn Eddezaïr",
+    "nameAr": "عين الدزاير",
+    "shortName": "AED",
     "group": "B",
-    "color": "#ca8a04",
-    "players": [
-      { "id": "p701", "name": "Sid Ali Merabet", "nameAr": "سيد علي مرابط", "number": 1, "position": "GK" },
-      { "id": "p702", "name": "Walid Bencheikh", "nameAr": "وليد بن الشيخ", "number": 4, "position": "DEF" },
-      { "id": "p703", "name": "Oussama Rahmani", "nameAr": "أسامة رحماني", "number": 7, "position": "MID" },
-      { "id": "p704", "name": "Kamel Tahar", "nameAr": "كمال طاهر", "number": 9, "position": "FWD" },
-      { "id": "p705", "name": "Idriss Boukerma", "nameAr": "إدريس بوكرمة", "number": 10, "position": "FWD" },
-      { "id": "p706", "name": "Massinissa Idir", "nameAr": "ماسينيسا إدير", "number": 11, "position": "MID" }
-    ]
+    "color": "#4bab2b",
+    "players": []
   },
   {
     "id": "t8",
-    "name": "Nadi El Achour",
-    "nameAr": "نادي العاشور",
-    "shortName": "NA",
+    "name": "Rosso Verdi",
+    "nameAr": "روصو فاردي",
+    "shortName": "ROV",
     "group": "B",
-    "color": "#4d7c0f",
-    "players": [
-      { "id": "p801", "name": "Brahim Yousfi", "nameAr": "إبراهيم يوسفي", "number": 1, "position": "GK" },
-      { "id": "p802", "name": "Imad Cherifi", "nameAr": "عماد شريفي", "number": 5, "position": "DEF" },
-      { "id": "p803", "name": "Younes Belkadi", "nameAr": "يونس بلقاضي", "number": 8, "position": "MID" },
-      { "id": "p804", "name": "Toufik Messaoudi", "nameAr": "توفيق مسعودي", "number": 9, "position": "FWD" },
-      { "id": "p805", "name": "Anouar Djebbar", "nameAr": "أنور جبار", "number": 10, "position": "MID" },
-      { "id": "p806", "name": "Lotfi Bensaid", "nameAr": "لطفي بن سعيد", "number": 11, "position": "FWD" }
-    ]
+    "color": "#302bab",
+    "players": []
+  },
+  {
+    "id": "t9",
+    "name": "Coriace Baba Hassen",
+    "nameAr": "قورياس بابا حسن",
+    "shortName": "CBH",
+    "group": "C",
+    "color": "#ab562b",
+    "players": []
+  },
+  {
+    "id": "t10",
+    "name": "Mustapha Brouchmo",
+    "nameAr": "مصطفى بروشمو",
+    "shortName": "MBR",
+    "group": "C",
+    "color": "#2bab7b",
+    "players": []
+  },
+  {
+    "id": "t11",
+    "name": "Aïn Naâdja",
+    "nameAr": "عين النعجة",
+    "shortName": "ANA",
+    "group": "C",
+    "color": "#a12bab",
+    "players": []
+  },
+  {
+    "id": "t12",
+    "name": "Barça Rahmania",
+    "nameAr": "برصا الرحمانية",
+    "shortName": "BRA",
+    "group": "C",
+    "color": "#90ab2b",
+    "players": []
+  },
+  {
+    "id": "t13",
+    "name": "Liverpool Ouled Mendil",
+    "nameAr": "ليفربول أولاد منديل",
+    "shortName": "LOM",
+    "group": "D",
+    "color": "#2b6bab",
+    "players": []
+  },
+  {
+    "id": "t14",
+    "name": "Hamza Ouled Mendil",
+    "nameAr": "حمزة أولاد منديل",
+    "shortName": "HOM",
+    "group": "D",
+    "color": "#ab2b45",
+    "players": []
+  },
+  {
+    "id": "t15",
+    "name": "Sassuolo",
+    "nameAr": "ساسولو",
+    "shortName": "SAS",
+    "group": "D",
+    "color": "#2bab36",
+    "players": []
+  },
+  {
+    "id": "t16",
+    "name": "Gdaouinia",
+    "nameAr": "قداونية",
+    "shortName": "GDA",
+    "group": "D",
+    "color": "#5b2bab",
+    "players": []
+  },
+  {
+    "id": "t17",
+    "name": "Khoukhda",
+    "nameAr": "خوخدة",
+    "shortName": "KHK",
+    "group": "E",
+    "color": "#ab812b",
+    "players": []
+  },
+  {
+    "id": "t18",
+    "name": "La Nostra",
+    "nameAr": "لا نوسترا",
+    "shortName": "LAN",
+    "group": "E",
+    "color": "#2baba6",
+    "players": []
+  },
+  {
+    "id": "t19",
+    "name": "Omar Pizzeria",
+    "nameAr": "عمر بيتزيريا",
+    "shortName": "OPZ",
+    "group": "E",
+    "color": "#ab2b8b",
+    "players": []
+  },
+  {
+    "id": "t20",
+    "name": "Marghna",
+    "nameAr": "مرغنة",
+    "shortName": "MRG",
+    "group": "E",
+    "color": "#65ab2b",
+    "players": []
+  },
+  {
+    "id": "t21",
+    "name": "Saleh Kriar",
+    "nameAr": "صالح كريار",
+    "shortName": "SKR",
+    "group": "F",
+    "color": "#2b40ab",
+    "players": []
+  },
+  {
+    "id": "t22",
+    "name": "El Harrach",
+    "nameAr": "الحراش",
+    "shortName": "ELH",
+    "group": "F",
+    "color": "#ab3b2b",
+    "players": []
+  },
+  {
+    "id": "t23",
+    "name": "La Plast",
+    "nameAr": "لابلاست",
+    "shortName": "LPL",
+    "group": "F",
+    "color": "#2bab61",
+    "players": []
+  },
+  {
+    "id": "t24",
+    "name": "Fouad Soubeyrate",
+    "nameAr": "فؤاد سوبيرات",
+    "shortName": "FSO",
+    "group": "F",
+    "color": "#862bab",
+    "players": []
+  },
+  {
+    "id": "t25",
+    "name": "AADL El Qadima",
+    "nameAr": "AADL القديمة",
+    "shortName": "AAD",
+    "group": "G",
+    "color": "#abab2b",
+    "players": []
+  },
+  {
+    "id": "t26",
+    "name": "El Mahouni",
+    "nameAr": "فريق الماهوني",
+    "shortName": "MAH",
+    "group": "G",
+    "color": "#2b85ab",
+    "players": []
+  },
+  {
+    "id": "t27",
+    "name": "Atlético Madrid",
+    "nameAr": "أتليتيكو مدريد",
+    "shortName": "ATM",
+    "group": "G",
+    "color": "#ab2b60",
+    "players": []
+  },
+  {
+    "id": "t28",
+    "name": "Mouhoub",
+    "nameAr": "موهوب",
+    "shortName": "MOU",
+    "group": "G",
+    "color": "#3aab2b",
+    "players": []
+  },
+  {
+    "id": "t29",
+    "name": "Bouirek Snoubar",
+    "nameAr": "بوبكر الصنوبر",
+    "shortName": "BSN",
+    "group": "H",
+    "color": "#412bab",
+    "players": []
+  },
+  {
+    "id": "t30",
+    "name": "MCRB",
+    "nameAr": "MCRB",
+    "shortName": "MCR",
+    "group": "H",
+    "color": "#ab662b",
+    "players": []
+  },
+  {
+    "id": "t31",
+    "name": "Juventus Eddakakna",
+    "nameAr": "جوفنتوس الدكاكنة",
+    "shortName": "JUV",
+    "group": "H",
+    "color": "#2bab8c",
+    "players": []
+  },
+  {
+    "id": "t32",
+    "name": "Hamza LOTSS",
+    "nameAr": "حمزة LOTSS",
+    "shortName": "HLO",
+    "group": "H",
+    "color": "#ab2ba5",
+    "players": []
+  },
+  {
+    "id": "t33",
+    "name": "El Marchi",
+    "nameAr": "المارشي",
+    "shortName": "MAR",
+    "group": "I",
+    "color": "#80ab2b",
+    "players": []
+  },
+  {
+    "id": "t34",
+    "name": "Milano",
+    "nameAr": "Milano",
+    "shortName": "MIL",
+    "group": "I",
+    "color": "#2b5aab",
+    "players": []
+  },
+  {
+    "id": "t35",
+    "name": "El Bidaya",
+    "nameAr": "البداية",
+    "shortName": "BID",
+    "group": "I",
+    "color": "#ab2b35",
+    "players": []
+  },
+  {
+    "id": "t36",
+    "name": "Zenigo",
+    "nameAr": "زنيقة",
+    "shortName": "ZEN",
+    "group": "I",
+    "color": "#2bab46",
+    "players": []
+  },
+  {
+    "id": "t37",
+    "name": "Oussama Draria",
+    "nameAr": "أسامة درارية",
+    "shortName": "ODR",
+    "group": "J",
+    "color": "#6c2bab",
+    "players": [],
+    "disqualified": true
+  },
+  {
+    "id": "t38",
+    "name": "Mourad Djibouti",
+    "nameAr": "مراد جيبوتي",
+    "shortName": "MDJ",
+    "group": "J",
+    "color": "#ab912b",
+    "players": [],
+    "disqualified": true
+  },
+  {
+    "id": "t39",
+    "name": "Saleh Baba Hassen",
+    "nameAr": "صالح بابا حسن",
+    "shortName": "SBH",
+    "group": "J",
+    "color": "#2ba0ab",
+    "players": []
+  },
+  {
+    "id": "t40",
+    "name": "Real Madrid",
+    "nameAr": "ريال مدريد",
+    "shortName": "RMA",
+    "group": "J",
+    "color": "#ab2b7a",
+    "players": []
+  },
+  {
+    "id": "t41",
+    "name": "Turbo DZ",
+    "nameAr": "Turbo dz",
+    "shortName": "TDZ",
+    "group": "K",
+    "color": "#55ab2b",
+    "players": []
+  },
+  {
+    "id": "t42",
+    "name": "Oued Erremane",
+    "nameAr": "واد الرمان",
+    "shortName": "OER",
+    "group": "K",
+    "color": "#2b2fab",
+    "players": []
+  },
+  {
+    "id": "t43",
+    "name": "Madrasa El Qadima",
+    "nameAr": "مدرسة القديمة",
+    "shortName": "MEQ",
+    "group": "K",
+    "color": "#ab4c2b",
+    "players": []
+  },
+  {
+    "id": "t44",
+    "name": "Aston Villa",
+    "nameAr": "أستون فيلا",
+    "shortName": "AVI",
+    "group": "K",
+    "color": "#2bab71",
+    "players": []
+  },
+  {
+    "id": "t45",
+    "name": "Hai El Madhbah",
+    "nameAr": "حي المذبح",
+    "shortName": "HEM",
+    "group": "L",
+    "color": "#972bab",
+    "players": []
+  },
+  {
+    "id": "t46",
+    "name": "Essarb El Azrak",
+    "nameAr": "السرب الأزرق",
+    "shortName": "ESA",
+    "group": "L",
+    "color": "#9bab2b",
+    "players": []
+  },
+  {
+    "id": "t47",
+    "name": "FC Street",
+    "nameAr": "FC Street",
+    "shortName": "FCS",
+    "group": "L",
+    "color": "#2b75ab",
+    "players": []
+  },
+  {
+    "id": "t48",
+    "name": "Tibi Mezoumbi",
+    "nameAr": "تيبي مزومبي",
+    "shortName": "TMZ",
+    "group": "L",
+    "color": "#ab2b50",
+    "players": []
   }
 ]

@@ -1,26 +1,34 @@
 [
   {
     "id": "n1",
-    "date": "2026-05-01",
-    "title": "Coup d'envoi du Tournoi de Rue de Douéra 2026 !",
-    "titleAr": "انطلاق بطولة دويرة الشارعية 2026!",
-    "body": "Le tournoi débute ce week-end avec 8 équipes réparties en 2 groupes. Bonne chance à tous les participants !",
-    "bodyAr": "تنطلق البطولة نهاية هذا الأسبوع بمشاركة 8 فرق موزعة على مجموعتين. حظا موفقا لجميع المشاركين!"
+    "date": "2026-05-30",
+    "title": "Cette 2e édition est dédiée à la mémoire de Wassim Cherri",
+    "titleAr": "هذه الطبعة الثانية مهداة لروح الفقيد وسيم شري",
+    "body": "Toute l'organisation du tournoi tient à dédier cette 2e édition à la mémoire de notre regretté Wassim Cherri, tragiquement décédé dans un accident de la route au niveau du terrain. Que Dieu ait son âme. Nos pensées accompagnent sa famille et ses proches tout au long de cette compétition.",
+    "bodyAr": "تتوجه إدارة البطولة بإهداء هذه الطبعة الثانية إلى روح الفقيد وسيم شري، الذي فارق الحياة إثر حادث مرور مأساوي بمحاذاة أرضية الملعب. رحمه الله وأسكنه فسيح جناته، ونتقدم بأحر التعازي لعائلته وأحبائه طيلة هذه البطولة."
   },
   {
     "id": "n2",
-    "date": "2026-05-03",
-    "title": "Résultats de la Journée 1",
-    "titleAr": "نتائج الجولة الأولى",
-    "body": "Étoile de Douéra s'impose 2-1 face à AS Khraicia. Amel Bouchaoui démarre fort avec une victoire 2-0 contre Nadi El Achour.",
-    "bodyAr": "فازت نجمة دويرة 2-1 على الجمعية الرياضية خريسية. أمل بوشاوي ينطلق بقوة بفوزه 2-0 على نادي العاشور."
+    "date": "2026-06-08",
+    "title": "Accès au terrain réservé aux joueurs et encadrants",
+    "titleAr": "الدخول إلى أرضية الملعب مخصص للاعبين والأطر فقط",
+    "body": "Pour le bon déroulement des rencontres et la sécurité de tous, l'accès à l'aire de jeu est désormais strictement réservé aux joueurs inscrits et aux membres encadrants de chaque équipe. Les supporters et les familles sont priés de rester en dehors du terrain pendant toute la durée des matchs. Merci de votre compréhension et de votre coopération.",
+    "bodyAr": "حرصًا على حسن سير المباريات وسلامة الجميع، أصبح الدخول إلى أرضية الملعب مقتصرًا فقط على اللاعبين المسجلين والأطر المرافقة لكل فريق. نرجو من الأنصار والعائلات البقاء خارج أرضية الميدان طيلة مدة المباريات. شكرًا لتفهمكم وتعاونكم."
   },
   {
     "id": "n3",
-    "date": "2026-05-17",
-    "title": "Fin de la phase de groupes",
-    "titleAr": "نهاية مرحلة المجموعات",
-    "body": "La phase de groupes est terminée ! Étoile de Douéra termine 1ère du groupe A et Amel Bouchaoui 1er du groupe B. Les demi-finales sont prévues le 14 juin.",
-    "bodyAr": "انتهت مرحلة المجموعات! تصدرت نجمة دويرة المجموعة أ وتصدر أمل بوشاوي المجموعة ب. موعدنا في نصف النهائي يوم 14 جوان."
+    "date": "2026-06-09",
+    "title": "Exclusion définitive de deux équipes de la Groupe J",
+    "titleAr": "إقصاء نهائي لفريقين من المجموعة J",
+    "body": "Suite aux graves incidents et à la bagarre générale survenus lors de la rencontre entre Oussama Draria et Mourad Djibouti, l'organisation du tournoi a décidé l'exclusion définitive et immédiate des deux équipes de la compétition. Toutes leurs rencontres restantes dans la Groupe J sont annulées. La direction du tournoi rappelle son attachement aux valeurs du fair-play et de l'esprit sportif.",
+    "bodyAr": "إثر الأحداث الخطيرة والمشاجرة الجماعية التي وقعت خلال مباراة فريقي أسامة درارية ومراد جيبوتي، قررت إدارة البطولة إقصاء الفريقين بشكل نهائي وفوري من المنافسة. وبناءً على ذلك، تم إلغاء جميع المباريات المتبقية لهما في المجموعة J. وتجدد إدارة البطولة تمسكها بقيم الروح الرياضية واللعب النظيف."
+  },
+  {
+    "id": "n4",
+    "date": "2026-06-10",
+    "title": "Résumé de la Journée 1 : des scores spectaculaires",
+    "titleAr": "ملخص الجولة الأولى: نتائج مثيرة وأهداف كثيرة",
+    "body": "La première journée a tenu toutes ses promesses ! WR Performance écrase El Riyacha 8-1, Saleh Kriar domine El Harrach 9-3, et Bouirek Snoubar l'emporte 6-5 face à MCRB dans un véritable festival offensif. Côté discipline, les gardiens de El Marchi et de Zenigo ont écopé d'un avertissement et seront expulsés en cas de nouveau carton jaune lors de la prochaine journée. Rendez-vous pour la Journée 2 !",
+    "bodyAr": "قدمت الجولة الأولى مباريات مثيرة بامتياز! WR Performance يسحق الرياشة بنتيجة 8-1، صالح كريار يتفوق على الحراش 9-3، وبوبكر الصنوبر يفوز 6-5 على MCRB في مهرجان أهداف حقيقي. على الصعيد الانضباطي، تحصل حارسا فريقي المارشي وزنيقة على إنذار بالبطاقة الصفراء وسيتعرضان للطرد في حال تكرار الأمر في الجولة القادمة. موعدنا في الجولة الثانية!"
   }
 ]

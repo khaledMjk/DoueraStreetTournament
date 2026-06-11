@@ -1,4 +1,62 @@
 [
-  { "id": "A", "name": "Groupe A", "nameAr": "المجموعة أ" },
-  { "id": "B", "name": "Groupe B", "nameAr": "المجموعة ب" }
+  {
+    "id": "A",
+    "name": "Groupe A",
+    "nameAr": "المجموعة A"
+  },
+  {
+    "id": "B",
+    "name": "Groupe B",
+    "nameAr": "المجموعة B"
+  },
+  {
+    "id": "C",
+    "name": "Groupe C",
+    "nameAr": "المجموعة C"
+  },
+  {
+    "id": "D",
+    "name": "Groupe D",
+    "nameAr": "المجموعة D"
+  },
+  {
+    "id": "E",
+    "name": "Groupe E",
+    "nameAr": "المجموعة E"
+  },
+  {
+    "id": "F",
+    "name": "Groupe F",
+    "nameAr": "المجموعة F"
+  },
+  {
+    "id": "G",
+    "name": "Groupe G",
+    "nameAr": "المجموعة G"
+  },
+  {
+    "id": "H",
+    "name": "Groupe H",
+    "nameAr": "المجموعة H"
+  },
+  {
+    "id": "I",
+    "name": "Groupe I",
+    "nameAr": "المجموعة I"
+  },
+  {
+    "id": "J",
+    "name": "Groupe J",
+    "nameAr": "المجموعة J"
+  },
+  {
+    "id": "K",
+    "name": "Groupe K",
+    "nameAr": "المجموعة K"
+  },
+  {
+    "id": "L",
+    "name": "Groupe L",
+    "nameAr": "المجموعة L"
+  }
 ]

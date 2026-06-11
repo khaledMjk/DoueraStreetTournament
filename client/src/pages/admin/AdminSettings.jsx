@@ -91,8 +91,17 @@ export default function AdminSettings() {
           </FormField>
         </div>
 
-        <FormField label="Facebook">
-          <TextInput value={form.contactFacebook || ""} onChange={(e) => set("contactFacebook", e.target.value)} />
+        <div className="grid gap-3 sm:grid-cols-2">
+          <FormField label="Facebook">
+            <TextInput value={form.contactFacebook || ""} onChange={(e) => set("contactFacebook", e.target.value)} />
+          </FormField>
+          <FormField label="TikTok">
+            <TextInput value={form.contactTiktok || ""} onChange={(e) => set("contactTiktok", e.target.value)} />
+          </FormField>
+        </div>
+
+        <FormField label={t("admin.settings.phone")}>
+          <TextInput value={form.contactPhone || ""} onChange={(e) => set("contactPhone", e.target.value)} />
         </FormField>
 
         {actionError && <p className="text-sm font-semibold text-crimson-600">{actionError}</p>}
