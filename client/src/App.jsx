@@ -21,7 +21,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <Routes>
           <Route element={<Layout />}>
