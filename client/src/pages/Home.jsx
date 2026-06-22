@@ -56,6 +56,13 @@ export default function Home() {
             >
               {t("home.ctaMatches")}
             </Link>
+            <Link
+              to="/groups"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 font-bold text-white transition-colors hover:bg-white/10"
+            >
+              <span aria-hidden="true">📊</span>
+              {t("groups.viewStandings")}
+            </Link>
           </div>
         </div>
 
