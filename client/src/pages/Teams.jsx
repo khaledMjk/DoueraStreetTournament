@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
 import TeamCard from "../components/TeamCard";
@@ -25,6 +26,15 @@ export default function Teams() {
     <div>
       <PageHeader title={t("teams.title")} subtitle={t("teams.subtitle")} />
       <div className="mx-auto max-w-6xl px-4 py-10 space-y-10">
+        <div className="flex">
+          <Link
+            to="/groups"
+            className="inline-flex items-center gap-2 rounded-lg bg-gold-400 px-4 py-2 text-sm font-bold text-pitch-900 shadow-sm transition-colors hover:bg-gold-300 ms-auto"
+          >
+            <span aria-hidden="true">📊</span>
+            {t("groups.viewStandings")}
+          </Link>
+        </div>
         {teams.length === 0 ? (
           <EmptyState message={t("teams.noTeams")} />
         ) : (
