@@ -26,7 +26,7 @@ export default function MatchCard({ match, teams }) {
 
       <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center gap-2">
         <div className="flex min-w-0 items-center gap-2 justify-end text-end">
-          <span className="min-w-0 truncate font-bold text-pitch-900">{homeName}</span>
+          <span className="min-w-0 break-words font-bold leading-tight text-pitch-900">{homeName}</span>
           <TeamBadge team={homeTeam} label={homeName} />
         </div>
 
@@ -48,7 +48,7 @@ export default function MatchCard({ match, teams }) {
 
         <div className="flex min-w-0 items-center gap-2 justify-start text-start">
           <TeamBadge team={awayTeam} label={awayName} />
-          <span className="min-w-0 truncate font-bold text-pitch-900">{awayName}</span>
+          <span className="min-w-0 break-words font-bold leading-tight text-pitch-900">{awayName}</span>
         </div>
       </div>
 
