@@ -5,10 +5,7 @@
     "teams": "Équipes",
     "groups": "Classements",
     "matches": "Matchs",
-    "stats": "Statistiques",
-    "admin": "Admin",
-    "login": "Connexion",
-    "logout": "Déconnexion"
+    "stats": "Statistiques"
   },
   "common": {
     "loading": "Chargement...",
@@ -70,7 +67,10 @@
       "DEF": "Défenseur",
       "MID": "Milieu",
       "FWD": "Attaquant"
-    }
+    },
+    "playerName": "Nom (FR)",
+    "position": "Poste",
+    "noTeams": "Aucune équipe enregistrée."
   },
   "groups": {
     "title": "Classements des groupes",
@@ -105,104 +105,5 @@
     "team": "Équipe",
     "goals": "Buts",
     "noScorers": "Aucun but marqué pour le moment."
-  },
-  "admin": {
-    "login": {
-      "title": "Connexion administrateur",
-      "username": "Identifiant",
-      "password": "Mot de passe",
-      "submit": "Se connecter",
-      "error": "Identifiant ou mot de passe incorrect.",
-      "backToSite": "Retour au site"
-    },
-    "dashboard": {
-      "title": "Tableau de bord",
-      "welcome": "Bienvenue",
-      "viewSite": "Voir le site",
-      "teamsCard": "Équipes",
-      "teamsDesc": "Gérer les équipes et les joueurs",
-      "matchesCard": "Matchs",
-      "matchesDesc": "Gérer le calendrier et les résultats",
-      "groupsCard": "Groupes",
-      "groupsDesc": "Gérer les groupes du tournoi",
-      "newsCard": "Actualités",
-      "newsDesc": "Publier des annonces",
-      "settingsCard": "Paramètres",
-      "settingsDesc": "Informations générales du tournoi"
-    },
-    "teams": {
-      "title": "Gestion des équipes",
-      "addTeam": "Ajouter une équipe",
-      "editTeam": "Modifier l'équipe",
-      "name": "Nom (FR)",
-      "nameAr": "Nom (AR)",
-      "shortName": "Abréviation",
-      "group": "Groupe",
-      "color": "Couleur",
-      "players": "Joueurs",
-      "addPlayer": "Ajouter un joueur",
-      "playerName": "Nom (FR)",
-      "playerNameAr": "Nom (AR)",
-      "number": "N°",
-      "position": "Poste",
-      "noTeams": "Aucune équipe enregistrée."
-    },
-    "matches": {
-      "title": "Gestion des matchs",
-      "addMatch": "Ajouter un match",
-      "editMatch": "Modifier le match",
-      "round": "Journée (FR)",
-      "roundAr": "Journée (AR)",
-      "group": "Groupe",
-      "noGroupOption": "Phase finale (sans groupe)",
-      "homeTeam": "Équipe à domicile",
-      "awayTeam": "Équipe à l'extérieur",
-      "homeLabel": "Intitulé domicile (si équipe inconnue)",
-      "awayLabel": "Intitulé extérieur (si équipe inconnue)",
-      "homeScore": "Buts domicile",
-      "awayScore": "Buts extérieur",
-      "venue": "Lieu (FR)",
-      "venueAr": "Lieu (AR)",
-      "status": "Statut",
-      "scorers": "Buteurs",
-      "addScorer": "Ajouter un but",
-      "scorerTeam": "Équipe",
-      "scorerPlayer": "Joueur",
-      "minute": "Minute",
-      "noMatches": "Aucun match enregistré.",
-      "selectTeam": "Sélectionner..."
-    },
-    "groups": {
-      "title": "Gestion des groupes",
-      "addGroup": "Ajouter un groupe",
-      "id": "Identifiant",
-      "name": "Nom (FR)",
-      "nameAr": "Nom (AR)"
-    },
-    "news": {
-      "title": "Gestion des actualités",
-      "addNews": "Ajouter une actualité",
-      "date": "Date",
-      "titleField": "Titre (FR)",
-      "titleAr": "Titre (AR)",
-      "body": "Texte (FR)",
-      "bodyAr": "Texte (AR)",
-      "noNews": "Aucune actualité enregistrée."
-    },
-    "settings": {
-      "title": "Paramètres du tournoi",
-      "name": "Nom du tournoi (FR)",
-      "nameAr": "Nom du tournoi (AR)",
-      "season": "Saison",
-      "startDate": "Date de début",
-      "location": "Lieu (FR)",
-      "locationAr": "Lieu (AR)",
-      "format": "Format (FR)",
-      "formatAr": "Format (AR)",
-      "organizer": "Organisateur (FR)",
-      "organizerAr": "Organisateur (AR)",
-      "phone": "Téléphone",
-      "saved": "Paramètres enregistrés."
-    }
   }
 }

@@ -26,7 +26,7 @@ export default function Teams() {
       <PageHeader title={t("teams.title")} subtitle={t("teams.subtitle")} />
       <div className="mx-auto max-w-6xl px-4 py-10 space-y-10">
         {teams.length === 0 ? (
-          <EmptyState message={t("admin.teams.noTeams")} />
+          <EmptyState message={t("teams.noTeams")} />
         ) : (
           <>
             {grouped

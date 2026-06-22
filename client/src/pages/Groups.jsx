@@ -28,7 +28,7 @@ export default function Groups() {
               </h2>
               <div className="mt-4">
                 {group.standings.length === 0 ? (
-                  <EmptyState message={t("admin.teams.noTeams")} />
+                  <EmptyState message={t("teams.noTeams")} />
                 ) : (
                   <StandingsTable standings={group.standings} teams={teams} />
                 )}

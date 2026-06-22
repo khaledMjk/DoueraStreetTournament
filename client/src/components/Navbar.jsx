@@ -8,8 +8,6 @@ const linkBase =
 const linkActive = "bg-gold-400 text-pitch-900";
 const linkInactive = "text-white/85 hover:bg-white/10 hover:text-white";
 
-const SHOW_ADMIN = import.meta.env.VITE_STATIC_DATA !== "true";
-
 export default function Navbar() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -51,14 +49,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-2">
           <LanguageSwitcher />
-          {SHOW_ADMIN && (
-            <NavLink
-              to="/admin"
-              className="rounded-lg border border-white/20 px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10 hover:text-white transition-colors"
-            >
-              {t("nav.admin")}
-            </NavLink>
-          )}
         </div>
 
         <button
@@ -87,15 +77,6 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            {SHOW_ADMIN && (
-              <NavLink
-                to="/admin"
-                onClick={() => setOpen(false)}
-                className={`${linkBase} ${linkInactive} border border-white/20 mt-1`}
-              >
-                {t("nav.admin")}
-              </NavLink>
-            )}
           </nav>
           <div className="pt-3">
             <LanguageSwitcher />

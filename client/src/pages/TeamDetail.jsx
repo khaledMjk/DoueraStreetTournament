@@ -58,8 +58,8 @@ export default function TeamDetail() {
                 <thead>
                   <tr className="bg-pitch-900 text-white">
                     <th className="px-3 py-3 text-center font-semibold">#</th>
-                    <th className="px-3 py-3 text-start font-semibold">{t("admin.teams.playerName")}</th>
-                    <th className="px-3 py-3 text-center font-semibold">{t("admin.teams.position")}</th>
+                    <th className="px-3 py-3 text-start font-semibold">{t("teams.playerName")}</th>
+                    <th className="px-3 py-3 text-center font-semibold">{t("teams.position")}</th>
                   </tr>
                 </thead>
                 <tbody>
