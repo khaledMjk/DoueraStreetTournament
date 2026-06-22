@@ -24,7 +24,37 @@ export default function MatchCard({ match, teams }) {
         <StatusBadge status={match.status} pending={pending} />
       </div>
 
-      <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+      {/* Mobile: each team on its own full-width row so names never get squeezed */}
+      <div className="mt-3 space-y-2 sm:hidden">
+        <div className="flex items-center gap-2">
+          <TeamBadge team={homeTeam} label={homeName} size="sm" />
+          <span className="min-w-0 flex-1 break-words font-bold leading-tight text-pitch-900">{homeName}</span>
+          {isFinished && (
+            <span className="shrink-0 rounded-md bg-pitch-900 px-2.5 py-0.5 text-base font-extrabold text-white tabular-nums">
+              {match.homeScore}
+            </span>
+          )}
+        </div>
+        <div className="flex items-center gap-2">
+          <TeamBadge team={awayTeam} label={awayName} size="sm" />
+          <span className="min-w-0 flex-1 break-words font-bold leading-tight text-pitch-900">{awayName}</span>
+          {isFinished && (
+            <span className="shrink-0 rounded-md bg-pitch-900 px-2.5 py-0.5 text-base font-extrabold text-white tabular-nums">
+              {match.awayScore}
+            </span>
+          )}
+        </div>
+        {!isFinished && (
+          <div className="text-center">
+            <span className="inline-block whitespace-nowrap rounded-lg bg-sand-100 px-3 py-1 text-xs font-bold text-pitch-500">
+              {pending ? t("common.noResult") : t("common.vs")}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Wider screens: centered home — score — away layout */}
+      <div className="mt-3 hidden grid-cols-[1fr_auto_1fr] items-center gap-2 sm:grid">
         <div className="flex min-w-0 items-center gap-2 justify-end text-end">
           <span className="min-w-0 break-words font-bold leading-tight text-pitch-900">{homeName}</span>
           <TeamBadge team={homeTeam} label={homeName} />
