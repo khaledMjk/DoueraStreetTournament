@@ -6,22 +6,26 @@ export default function StandingsTable({ standings, teams }) {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
 
+  // Secondary columns are hidden on phones so the key figures (played,
+  // goal difference, points) always stay on screen without scrolling.
+  const hideOnMobile = "hidden sm:table-cell";
+
   const cols = [
     { key: "pos", label: t("groups.pos") },
     { key: "team", label: t("groups.team") },
     { key: "played", label: t("groups.played") },
-    { key: "won", label: t("groups.won") },
-    { key: "drawn", label: t("groups.drawn") },
-    { key: "lost", label: t("groups.lost") },
-    { key: "gf", label: t("groups.gf") },
-    { key: "ga", label: t("groups.ga") },
+    { key: "won", label: t("groups.won"), cls: hideOnMobile },
+    { key: "drawn", label: t("groups.drawn"), cls: hideOnMobile },
+    { key: "lost", label: t("groups.lost"), cls: hideOnMobile },
+    { key: "gf", label: t("groups.gf"), cls: hideOnMobile },
+    { key: "ga", label: t("groups.ga"), cls: hideOnMobile },
     { key: "gd", label: t("groups.gd") },
     { key: "pts", label: t("groups.pts") },
   ];
 
   return (
     <div className="overflow-x-auto rounded-2xl border border-pitch-100 bg-white shadow-sm">
-      <table className="w-full min-w-[520px] text-sm">
+      <table className="w-full text-sm sm:min-w-[520px]">
         <thead>
           <tr className="bg-pitch-900 text-white">
             {cols.map((col) => (
@@ -29,7 +33,7 @@ export default function StandingsTable({ standings, teams }) {
                 key={col.key}
                 className={`px-3 py-3 font-semibold ${
                   col.key === "team" ? "text-start" : "text-center"
-                }`}
+                } ${col.cls || ""}`}
               >
                 {col.label}
               </th>
@@ -55,20 +59,20 @@ export default function StandingsTable({ standings, teams }) {
                     {idx + 1}
                   </span>
                 </td>
-                <td className="px-3 py-2.5">
+                <td className="px-2 py-2.5 sm:px-3">
                   <div className="flex items-center gap-2">
                     <TeamBadge team={team} label={row.name} size="sm" />
-                    <span className="font-semibold text-pitch-900 truncate">
+                    <span className="max-w-[120px] truncate font-semibold text-pitch-900 sm:max-w-none">
                       {team ? teamName(team, lang) : (lang === "ar" ? row.nameAr : row.name)}
                     </span>
                   </div>
                 </td>
                 <td className="px-3 py-2.5 text-center">{row.played}</td>
-                <td className="px-3 py-2.5 text-center">{row.won}</td>
-                <td className="px-3 py-2.5 text-center">{row.drawn}</td>
-                <td className="px-3 py-2.5 text-center">{row.lost}</td>
-                <td className="px-3 py-2.5 text-center">{row.goalsFor}</td>
-                <td className="px-3 py-2.5 text-center">{row.goalsAgainst}</td>
+                <td className={`px-3 py-2.5 text-center ${hideOnMobile}`}>{row.won}</td>
+                <td className={`px-3 py-2.5 text-center ${hideOnMobile}`}>{row.drawn}</td>
+                <td className={`px-3 py-2.5 text-center ${hideOnMobile}`}>{row.lost}</td>
+                <td className={`px-3 py-2.5 text-center ${hideOnMobile}`}>{row.goalsFor}</td>
+                <td className={`px-3 py-2.5 text-center ${hideOnMobile}`}>{row.goalsAgainst}</td>
                 <td className="px-3 py-2.5 text-center font-semibold">
                   {row.goalDifference > 0 ? `+${row.goalDifference}` : row.goalDifference}
                 </td>
