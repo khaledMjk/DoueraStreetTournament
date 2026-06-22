@@ -1,20 +1,26 @@
 import { useTranslation } from "react-i18next";
 
-export default function StatusBadge({ status }) {
+export default function StatusBadge({ status, pending = false }) {
   const { t } = useTranslation();
 
+  const effective = pending && status === "scheduled" ? "noResult" : status;
+
   const styles =
-    status === "finished"
+    effective === "finished"
       ? "bg-pitch-100 text-pitch-700"
-      : status === "cancelled"
+      : effective === "cancelled"
       ? "bg-crimson-100 text-crimson-700"
+      : effective === "noResult"
+      ? "bg-sand-200 text-pitch-600"
       : "bg-gold-100 text-gold-800";
 
   const label =
-    status === "finished"
+    effective === "finished"
       ? t("common.finished")
-      : status === "cancelled"
+      : effective === "cancelled"
       ? t("common.cancelled")
+      : effective === "noResult"
+      ? t("common.noResult")
       : t("common.scheduled");
 
   return (

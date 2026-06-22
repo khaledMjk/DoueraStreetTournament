@@ -33,7 +33,8 @@
     "scheduled": "À venir",
     "cancelled": "Annulé",
     "actions": "Actions",
-    "required": "Champ requis"
+    "required": "Champ requis",
+    "noResult": "Résultat non communiqué"
   },
   "home": {
     "heroBadge": "Saison 2026",

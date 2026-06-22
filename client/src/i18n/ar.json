@@ -33,7 +33,8 @@
     "scheduled": "قادمة",
     "cancelled": "ملغاة",
     "actions": "إجراءات",
-    "required": "حقل إلزامي"
+    "required": "حقل إلزامي",
+    "noResult": "لم تُعلَن النتيجة"
   },
   "home": {
     "heroBadge": "موسم 2026",
