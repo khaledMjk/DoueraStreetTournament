@@ -1,11 +1,15 @@
 # Tournoi de Douéra / بطولة دويرة
 
-Site web bilingue (français / arabe) pour le tournoi de football de rue de Douéra : équipes, groupes, calendrier, résultats, classements et statistiques, avec une interface d'administration pour gérer le contenu.
+Site web bilingue (français / arabe) pour le tournoi de football de rue de Douéra : équipes, groupes, calendrier, résultats, classements et statistiques. Le site est en lecture seule — les données sont mises à jour à la main dans les fichiers JSON.
 
 ## Structure du projet
 
-- `server/` — API Express (Node.js, ESM) avec stockage de données dans des fichiers JSON (`server/data/`)
+- `server/` — API Express (Node.js, ESM) en lecture seule, données stockées dans des fichiers JSON (`server/data/`)
 - `client/` — Application React (Vite) avec Tailwind CSS, i18next pour le FR/AR
+
+## Mise à jour des données
+
+Toutes les données (équipes, matchs, scores, groupes, actualités, paramètres) se modifient directement dans `server/data/*.json`. Il n'y a pas d'interface d'administration ; pour publier les changements, voir la section « Déploiement ».
 
 ## Démarrage — API (server)
 
@@ -16,19 +20,7 @@ cp .env.example .env
 npm run dev
 ```
 
-L'API est disponible sur `http://localhost:4000`.
-
-### Identifiants admin par défaut
-
-- Utilisateur : `admin`
-- Mot de passe : `douera2026`
-
-Pour changer le mot de passe, générez un nouveau hash et mettez à jour `server/data/admin.json` :
-
-```bash
-cd server
-npm run hash-password -- "nouveau_mot_de_passe"
-```
+L'API (lecture seule) est disponible sur `http://localhost:4000`.
 
 ## Démarrage — Client (frontend)
 
@@ -49,8 +41,12 @@ npm run build
 
 Les fichiers générés (`client/dist`) sont servis automatiquement par l'API Express (`server/server.js`) en production.
 
+## Déploiement (GitHub Pages)
+
+Le site public est déployé sur GitHub Pages par `.github/workflows/deploy-pages.yml`. Le workflow exporte les données de `server/data/` en JSON statique (`server/scripts/export-static.mjs`) puis construit le client. **Le déploiement n'est autorisé que depuis la branche `main`** : pour mettre le site à jour, fusionnez vos changements dans `main` et poussez.
+
+Site en ligne : https://khaledmjk.github.io/DoueraStreetTournament/
+
 ## Pages principales
 
 - Accueil, Équipes, Détail équipe, Classements, Matchs, Statistiques (FR/AR)
-- `/admin/login` — connexion administrateur
-- `/admin` — tableau de bord (équipes, matchs, groupes, actualités, paramètres)
