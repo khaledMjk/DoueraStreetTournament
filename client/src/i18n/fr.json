@@ -86,7 +86,10 @@
     "ga": "BC",
     "gd": "Diff",
     "pts": "Pts",
-    "viewStandings": "Voir le classement"
+    "grp": "Grp",
+    "viewStandings": "Voir le classement",
+    "bestThirdsTitle": "Meilleurs troisièmes qualifiés",
+    "bestThirdsSubtitle": "Les 8 meilleures équipes classées troisièmes de leur groupe, qualifiées pour les 32es de finale."
   },
   "matches": {
     "title": "Calendrier & Résultats",

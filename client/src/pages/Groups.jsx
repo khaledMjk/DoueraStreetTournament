@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
 import StandingsTable from "../components/StandingsTable";
+import BestThirdsTable from "../components/BestThirdsTable";
 import { useGroups } from "../hooks/useGroups";
 import { useTeams } from "../hooks/useTeams";
 import { Loading, ErrorMessage, EmptyState } from "../components/StatusMessage";
@@ -41,6 +42,18 @@ export default function Groups() {
               )}
             </section>
           ))
+        )}
+
+        {groups.length > 0 && (
+          <section>
+            <h2 className="text-xl font-extrabold text-pitch-900">
+              {t("groups.bestThirdsTitle")}
+            </h2>
+            <p className="mt-1 text-sm text-pitch-500">{t("groups.bestThirdsSubtitle")}</p>
+            <div className="mt-4">
+              <BestThirdsTable groups={groups} teams={teams} />
+            </div>
+          </section>
         )}
       </div>
     </div>
