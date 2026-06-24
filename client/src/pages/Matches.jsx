@@ -36,8 +36,7 @@ export default function Matches() {
 
   const filtered = useMemo(() => {
     return matches.filter((m) => {
-      if (group === "none" && m.group) return false;
-      if (group && group !== "none" && m.group !== group) return false;
+      if (group && m.group !== group) return false;
       if (round && m.round !== round) return false;
       if (status && m.status !== status) return false;
       return true;
@@ -59,7 +58,6 @@ export default function Matches() {
                 {lang === "ar" ? g.nameAr : g.name}
               </option>
             ))}
-            <option value="none">{t("common.noGroup")}</option>
           </select>
 
           <select className={selectClass} value={round} onChange={(e) => setRound(e.target.value)}>
