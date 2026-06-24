@@ -16,7 +16,7 @@ export default function TeamCard({ team }) {
       <div className="min-w-0 flex-1">
         <p className="truncate font-bold text-pitch-900">{teamName(team, lang)}</p>
         <p className="text-xs text-pitch-500">
-          {t("teams.group")} {team.group ?? "—"} · {team.players?.length || 0} {t("teams.players")}
+          {t("teams.group")} {team.group ?? "—"}
         </p>
         {(lang === "ar" ? team.noteAr : team.note) && (
           <p className="mt-1 text-xs leading-snug text-crimson-600">

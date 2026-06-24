@@ -159,36 +159,6 @@ export default function Home() {
           </section>
         </div>
 
-        {/* About */}
-        <section className="rounded-2xl border border-pitch-100 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-extrabold text-pitch-900">{t("home.about")}</h2>
-          <dl className="mt-4 grid gap-4 sm:grid-cols-3">
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-pitch-400">
-                {t("home.location")}
-              </dt>
-              <dd className="mt-1 font-semibold text-pitch-800">
-                {lang === "ar" ? settings?.locationAr : settings?.location}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-pitch-400">
-                {t("home.format")}
-              </dt>
-              <dd className="mt-1 font-semibold text-pitch-800">
-                {lang === "ar" ? settings?.formatAr : settings?.format}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-pitch-400">
-                {t("home.organizer")}
-              </dt>
-              <dd className="mt-1 font-semibold text-pitch-800">
-                {lang === "ar" ? settings?.organizerAr : settings?.organizer}
-              </dd>
-            </div>
-          </dl>
-        </section>
       </div>
     </div>
   );
