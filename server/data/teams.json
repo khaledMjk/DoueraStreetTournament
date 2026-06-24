@@ -161,7 +161,8 @@
     "shortName": "LAN",
     "group": "E",
     "color": "#2baba6",
-    "players": []
+    "players": [],
+    "photo": "teams/t18.jpg"
   },
   {
     "id": "t19",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useSettings } from "../hooks/useSettings";
 
@@ -57,6 +58,10 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10 py-3 text-center text-xs text-white/40">
         © {settings?.season || "2026"} — {isAr ? settings?.nameAr : settings?.name}
+        <span className="px-1.5">·</span>
+        <Link to="/teams/t18" className="hover:text-gold-300 transition-colors">
+          Created by La Nostra
+        </Link>
       </div>
     </footer>
   );
