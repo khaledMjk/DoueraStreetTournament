@@ -12,12 +12,16 @@
   {
     "id": "C",
     "name": "Groupe C",
-    "nameAr": "المجموعة C"
+    "nameAr": "المجموعة C",
+    "note": "Résultats incomplets : le match Coriace Baba Hassen – Barça Rahmania (J3) est sans résultat ; classement provisoire.",
+    "noteAr": "نتائج ناقصة: مباراة قورياس بابا حسن – برصا الرحمانية (الجولة 3) بدون نتيجة، والترتيب مؤقت."
   },
   {
     "id": "D",
     "name": "Groupe D",
-    "nameAr": "المجموعة D"
+    "nameAr": "المجموعة D",
+    "note": "Résultats incomplets : le match Hamza Ouled Mendil – Sassuolo (J3) est sans résultat ; classement provisoire.",
+    "noteAr": "نتائج ناقصة: مباراة حمزة أولاد منديل – ساسولو (الجولة 3) بدون نتيجة، والترتيب مؤقت."
   },
   {
     "id": "E",
@@ -27,7 +31,9 @@
   {
     "id": "F",
     "name": "Groupe F",
-    "nameAr": "المجموعة F"
+    "nameAr": "المجموعة F",
+    "note": "Le match El Stad – Fouad Soubeyrate a été annulé (gardien non qualifié) et n'est pas comptabilisé au classement.",
+    "noteAr": "أُلغيت مباراة فريق ستاد – فؤاد سوبيرات (حارس غير مؤهل) ولا تُحتسب ضمن الترتيب."
   },
   {
     "id": "G",
@@ -54,7 +60,9 @@
   {
     "id": "K",
     "name": "Groupe K",
-    "nameAr": "المجموعة K"
+    "nameAr": "المجموعة K",
+    "note": "Le match Turbo DZ – Aston Villa (J3) a été annulé (absence des deux équipes) et n'est pas comptabilisé.",
+    "noteAr": "أُلغيت مباراة Turbo DZ – أستون فيلا (الجولة 3) لغياب الفريقين، ولا تُحتسب ضمن الترتيب."
   },
   {
     "id": "L",
