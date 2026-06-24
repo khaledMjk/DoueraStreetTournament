@@ -70,7 +70,8 @@
     },
     "playerName": "Nom (FR)",
     "position": "Poste",
-    "noTeams": "Aucune équipe enregistrée."
+    "noTeams": "Aucune équipe enregistrée.",
+    "matchesPlayed": "Matchs joués"
   },
   "groups": {
     "title": "Classements des groupes",

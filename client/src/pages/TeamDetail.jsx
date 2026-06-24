@@ -24,6 +24,24 @@ export default function TeamDetail() {
   if (error) return <ErrorMessage message={error.message} />;
   if (!team) return <EmptyState message={t("common.error")} />;
 
+  // Team totals from finished matches (group stage + knockout).
+  const stats = matches.reduce(
+    (acc, m) => {
+      if (m.status !== "finished" || m.homeScore == null) return acc;
+      const home = m.homeTeamId === id;
+      acc.played += 1;
+      acc.scored += home ? m.homeScore : m.awayScore;
+      acc.conceded += home ? m.awayScore : m.homeScore;
+      return acc;
+    },
+    { played: 0, scored: 0, conceded: 0 }
+  );
+  const statCards = [
+    { value: stats.played, label: t("teams.matchesPlayed"), color: "text-pitch-900" },
+    { value: stats.scored, label: t("stats.goalsFor"), color: "text-gold-600" },
+    { value: stats.conceded, label: t("stats.goalsAgainst"), color: "text-crimson-600" },
+  ];
+
   return (
     <div>
       <div className="bg-pitch-900 pitch-texture text-white">
@@ -46,6 +64,17 @@ export default function TeamDetail() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-10 space-y-10">
+        <section>
+          <div className="grid grid-cols-3 gap-3">
+            {statCards.map((s) => (
+              <div key={s.label} className="rounded-2xl border border-pitch-100 bg-white p-4 text-center shadow-sm">
+                <p className={`text-3xl font-extrabold ${s.color}`}>{s.value}</p>
+                <p className="mt-1 text-xs text-pitch-500">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section>
           <h2 className="text-xl font-extrabold text-pitch-900">{t("nav.matches")}</h2>
           {matchesLoading ? (
