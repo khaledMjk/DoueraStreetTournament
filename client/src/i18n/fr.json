@@ -90,12 +90,13 @@
   "matches": {
     "title": "Calendrier & Résultats",
     "subtitle": "Tous les matchs du tournoi, joués et à venir.",
-    "allGroups": "Toutes les phases",
+    "allGroups": "Tous les groupes",
     "allStatuses": "Tous les statuts",
     "noMatches": "Aucun match ne correspond à ces filtres.",
     "round": "Journée",
     "groupStage": "Phase de groupes",
-    "knockout": "Phase finale"
+    "knockout": "Phase finale",
+    "allRounds": "Toutes les journées"
   },
   "stats": {
     "title": "Statistiques",

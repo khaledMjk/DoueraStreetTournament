@@ -18,20 +18,31 @@ export default function Matches() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
   const [group, setGroup] = useState("");
+  const [round, setRound] = useState("");
   const [status, setStatus] = useState("");
 
   const { matches, loading, error } = useMatches();
   const { teams, loading: teamsLoading } = useTeams();
   const { groups, loading: groupsLoading } = useGroups();
 
+  // Distinct rounds, ordered by when they first occur (Journées then knockout).
+  const rounds = useMemo(() => {
+    const seen = new Map();
+    for (const m of matches) {
+      if (!seen.has(m.round)) seen.set(m.round, { round: m.round, roundAr: m.roundAr, date: m.date });
+    }
+    return [...seen.values()].sort((a, b) => a.date.localeCompare(b.date));
+  }, [matches]);
+
   const filtered = useMemo(() => {
     return matches.filter((m) => {
       if (group === "none" && m.group) return false;
       if (group && group !== "none" && m.group !== group) return false;
+      if (round && m.round !== round) return false;
       if (status && m.status !== status) return false;
       return true;
     });
-  }, [matches, group, status]);
+  }, [matches, group, round, status]);
 
   if (loading || teamsLoading || groupsLoading) return <Loading />;
   if (error) return <ErrorMessage message={error.message} />;
@@ -51,10 +62,20 @@ export default function Matches() {
             <option value="none">{t("common.noGroup")}</option>
           </select>
 
+          <select className={selectClass} value={round} onChange={(e) => setRound(e.target.value)}>
+            <option value="">{t("matches.allRounds")}</option>
+            {rounds.map((r) => (
+              <option key={r.round} value={r.round}>
+                {lang === "ar" && r.roundAr ? r.roundAr : r.round}
+              </option>
+            ))}
+          </select>
+
           <select className={selectClass} value={status} onChange={(e) => setStatus(e.target.value)}>
             <option value="">{t("matches.allStatuses")}</option>
-            <option value="scheduled">{t("common.scheduled")}</option>
             <option value="finished">{t("common.finished")}</option>
+            <option value="scheduled">{t("common.scheduled")}</option>
+            <option value="cancelled">{t("common.cancelled")}</option>
           </select>
 
           <Link to="/groups" className={standingsBtnClass}>
