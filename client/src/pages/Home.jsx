@@ -60,6 +60,13 @@ export default function Home() {
               <span aria-hidden="true">📊</span>
               {t("groups.viewStandings")}
             </Link>
+            <Link
+              to="/stats"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 font-bold text-white transition-colors hover:bg-white/10"
+            >
+              <span aria-hidden="true">📈</span>
+              {t("nav.stats")}
+            </Link>
           </div>
         </div>
 
