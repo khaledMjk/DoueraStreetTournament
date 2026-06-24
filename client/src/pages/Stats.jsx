@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
 import TeamBadge from "../components/TeamBadge";
-import { useTopScorers } from "../hooks/useTopScorers";
 import { useTeams } from "../hooks/useTeams";
 import { useMatches } from "../hooks/useMatches";
 import { findTeam, teamName } from "../utils/teams";
@@ -50,9 +49,8 @@ function TeamStatTable({ rows, teams, lang, valueLabel, valueKey, accent }) {
 export default function Stats() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
-  const { scorers, loading, error } = useTopScorers(20);
   const { teams, loading: teamsLoading } = useTeams();
-  const { matches, loading: matchesLoading } = useMatches();
+  const { matches, loading: matchesLoading, error } = useMatches();
 
   // Aggregate goals scored / conceded per team across all finished matches.
   const { bestAttack, bestDefense } = useMemo(() => {
@@ -72,56 +70,13 @@ export default function Stats() {
     };
   }, [matches]);
 
-  if (loading || teamsLoading || matchesLoading) return <Loading />;
+  if (teamsLoading || matchesLoading) return <Loading />;
   if (error) return <ErrorMessage message={error.message} />;
 
   return (
     <div>
       <PageHeader title={t("stats.title")} subtitle={t("stats.subtitle")} />
       <div className="mx-auto max-w-5xl px-4 py-10 space-y-10">
-        <section>
-          <h2 className="mb-4 text-xl font-extrabold text-pitch-900">{t("stats.topScorers")}</h2>
-          {scorers.length === 0 ? (
-            <EmptyState message={t("stats.noScorers")} />
-          ) : (
-            <div className="overflow-hidden rounded-2xl border border-pitch-100 bg-white shadow-sm">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-pitch-900 text-white">
-                    <th className="px-3 py-3 text-center font-semibold">{t("stats.rank")}</th>
-                    <th className="px-3 py-3 text-start font-semibold">{t("stats.player")}</th>
-                    <th className="px-3 py-3 text-start font-semibold">{t("stats.team")}</th>
-                    <th className="px-3 py-3 text-center font-semibold">{t("stats.goals")}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {scorers.map((row, idx) => {
-                    const team = findTeam(teams, row.teamId);
-                    return (
-                      <tr key={row.playerId} className="border-t border-pitch-50">
-                        <td className="px-3 py-2.5 text-center font-extrabold text-pitch-700">{idx + 1}</td>
-                        <td className="px-3 py-2.5 font-semibold text-pitch-900">
-                          {lang === "ar" && row.nameAr ? row.nameAr : row.name}
-                          <span className="ms-2 text-xs text-pitch-400">#{row.number}</span>
-                        </td>
-                        <td className="px-3 py-2.5">
-                          <div className="flex items-center gap-2">
-                            <TeamBadge team={team} label={row.teamName} size="sm" />
-                            <span className="text-pitch-700">
-                              {lang === "ar" && row.teamNameAr ? row.teamNameAr : row.teamName}
-                            </span>
-                          </div>
-                        </td>
-                        <td className="px-3 py-2.5 text-center font-extrabold text-gold-600">{row.goals}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </section>
-
         <div className="grid gap-8 lg:grid-cols-2">
           <section>
             <h2 className="mb-4 text-xl font-extrabold text-pitch-900">⚽ {t("stats.bestAttack")}</h2>
