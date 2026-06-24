@@ -64,17 +64,6 @@ export default function TeamDetail() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-10 space-y-10">
-        {team.photo && (
-          <section>
-            <img
-              src={`${import.meta.env.BASE_URL}${team.photo}`}
-              alt={teamName(team, lang)}
-              loading="lazy"
-              className="w-full rounded-2xl border border-pitch-100 object-cover shadow-sm"
-            />
-          </section>
-        )}
-
         <section>
           <div className="grid grid-cols-3 gap-3">
             {statCards.map((s) => (
@@ -102,6 +91,17 @@ export default function TeamDetail() {
             </div>
           )}
         </section>
+
+        {team.photo && (
+          <section>
+            <img
+              src={`${import.meta.env.BASE_URL}${team.photo}`}
+              alt={teamName(team, lang)}
+              loading="lazy"
+              className="w-full rounded-2xl border border-pitch-100 object-cover shadow-sm"
+            />
+          </section>
+        )}
       </div>
     </div>
   );
