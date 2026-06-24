@@ -14,8 +14,8 @@ function compareRows(a, b) {
   return a.name.localeCompare(b.name);
 }
 
-// Collect each group's third-placed team, rank them across all groups and keep
-// the best ones that qualified for the knockout round.
+// Collect each group's third-placed team and rank them across all groups. The
+// best QUALIFY_COUNT advance to the knockout round; the rest are shown too.
 function bestThirds(groups) {
   return groups
     .map((group) => {
@@ -23,8 +23,7 @@ function bestThirds(groups) {
       return third ? { ...third, group: group.id } : null;
     })
     .filter(Boolean)
-    .sort(compareRows)
-    .slice(0, QUALIFY_COUNT);
+    .sort(compareRows);
 }
 
 export default function BestThirdsTable({ groups, teams }) {
@@ -68,11 +67,21 @@ export default function BestThirdsTable({ groups, teams }) {
         <tbody>
           {rows.map((row, idx) => {
             const team = findTeam(teams, row.teamId);
+            const isQualifying = idx < QUALIFY_COUNT;
             return (
-              <tr key={row.teamId} className="border-t border-pitch-50 bg-pitch-50/60">
+              <tr
+                key={row.teamId}
+                className={`${
+                  idx === QUALIFY_COUNT
+                    ? "border-t-2 border-dashed border-gold-300"
+                    : "border-t border-pitch-50"
+                } ${isQualifying ? "bg-pitch-50/60" : "text-pitch-400"}`}
+              >
                 <td className="px-3 py-2.5 text-center font-bold text-pitch-700">
                   <span className="inline-flex items-center gap-1.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+                    {isQualifying && (
+                      <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+                    )}
                     {idx + 1}
                   </span>
                 </td>
