@@ -18,6 +18,11 @@ export default function TeamCard({ team }) {
         <p className="text-xs text-pitch-500">
           {t("teams.group")} {team.group ?? "—"} · {team.players?.length || 0} {t("teams.players")}
         </p>
+        {(lang === "ar" ? team.noteAr : team.note) && (
+          <p className="mt-1 text-xs leading-snug text-crimson-600">
+            <span aria-hidden="true">⚠ </span>{lang === "ar" ? team.noteAr : team.note}
+          </p>
+        )}
       </div>
       <span className="text-pitch-300 group-hover:text-gold-500 transition-colors rtl:rotate-180">→</span>
     </Link>

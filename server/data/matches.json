@@ -93,7 +93,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m7",
@@ -173,7 +175,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m12",
@@ -285,7 +289,9 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m19",
@@ -477,7 +483,9 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m31",
@@ -541,7 +549,9 @@
     "homeScore": null,
     "awayScore": null,
     "status": "cancelled",
-    "scorers": []
+    "scorers": [],
+    "note": "Résultat annulé : le gardien de Fouad Soubeyrate avait joué pour une autre équipe (joueur non qualifié) ; sanctions et exclusion définitive du gardien.",
+    "noteAr": "أُلغيت نتيجة المباراة: تبيّن إشراك حارس مرمى فؤاد سوبيرات مع فريق آخر في الدورة (لاعب غير مؤهل)، مع عقوبات ومنع الحارس نهائياً."
   },
   {
     "id": "m35",
@@ -557,7 +567,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m36",
@@ -573,7 +585,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m37",
@@ -845,7 +859,9 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m54",
@@ -877,7 +893,9 @@
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
-    "scorers": []
+    "scorers": [],
+    "note": "Match à l'origine du litige ; les deux équipes ont ensuite été réintégrées. Résultat non disponible.",
+    "noteAr": "المباراة التي شهدت الأحداث محل الطعن؛ أُعيد الفريقان إلى المنافسة لاحقاً. النتيجة غير متوفرة."
   },
   {
     "id": "m56",
@@ -909,7 +927,9 @@
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
-    "scorers": []
+    "scorers": [],
+    "note": "Résultat non disponible (groupe concerné par le litige).",
+    "noteAr": "النتيجة غير متوفرة (ضمن مباريات المجموعة محل الطعن)."
   },
   {
     "id": "m58",
@@ -941,7 +961,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m60",
@@ -1037,7 +1059,9 @@
     "homeScore": null,
     "awayScore": null,
     "status": "cancelled",
-    "scorers": []
+    "scorers": [],
+    "note": "Match annulé (non comptabilisé) : absence des deux équipes.",
+    "noteAr": "أُلغيت المباراة ولم تُحتسب نتيجتها بسبب غياب الفريقين عن الموعد المحدد."
   },
   {
     "id": "m66",
@@ -1133,7 +1157,9 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "finished",
-    "scorers": []
+    "scorers": [],
+    "note": "Victoire par forfait (adversaire absent).",
+    "noteAr": "فوز بالتخلّي (انسحاب/غياب الخصم)."
   },
   {
     "id": "m72",
@@ -1197,7 +1223,9 @@
     "homeScore": null,
     "awayScore": null,
     "status": "cancelled",
-    "scorers": []
+    "scorers": [],
+    "note": "Gagné 5-2 sur le terrain par El Riyacha, puis annulé sur réclamation (joueurs non qualifiés) : La Nostra qualifiée pour les 16es, El Riyacha disqualifié.",
+    "noteAr": "انتهت ميدانياً بفوز الرياشة 5-2، لكن أُلغيت النتيجة إثر طعن لانوسترا لإشراك الرياشة لاعبين غير مؤهلين؛ تأهّلت لانوسترا إلى دور الـ16 وأُقصيت الرياشة."
   },
   {
     "id": "m76",

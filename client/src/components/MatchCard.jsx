@@ -16,6 +16,7 @@ export default function MatchCard({ match, teams }) {
   const awayName = matchSideLabel(match, "away", teams, lang);
   const round = lang === "ar" && match.roundAr ? match.roundAr : match.round;
   const venue = lang === "ar" && match.venueAr ? match.venueAr : match.venue;
+  const note = lang === "ar" && match.noteAr ? match.noteAr : match.note;
 
   return (
     <div className="rounded-2xl border border-pitch-100 bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
@@ -87,6 +88,12 @@ export default function MatchCard({ match, teams }) {
         {match.time && <span>· {match.time}</span>}
         {venue && <span>· {venue}</span>}
       </div>
+
+      {note && (
+        <p className="mt-2 rounded-lg bg-sand-100 px-3 py-1.5 text-xs leading-snug text-pitch-600">
+          <span aria-hidden="true">ℹ️ </span>{note}
+        </p>
+      )}
     </div>
   );
 }

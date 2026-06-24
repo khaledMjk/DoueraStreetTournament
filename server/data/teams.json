@@ -15,7 +15,9 @@
     "shortName": "RYC",
     "group": "A",
     "color": "#2bab50",
-    "players": []
+    "players": [],
+    "note": "Disqualifié au tour des 32 (match La Nostra) pour avoir aligné des joueurs non qualifiés.",
+    "noteAr": "أُقصي من دور الـ32 (مباراة لانوسترا) بسبب إشراك لاعبين غير مؤهلين."
   },
   {
     "id": "t3",
@@ -195,7 +197,9 @@
     "shortName": "STD",
     "group": "F",
     "color": "#ab3b2b",
-    "players": []
+    "players": [],
+    "note": "Anciennement affiché « El Harrach » ; nom corrigé en « El Stad » d'après la page officielle.",
+    "noteAr": "كان يظهر سابقاً باسم «الحراش»؛ صُحّح إلى «فريق ستاد» وفق الصفحة الرسمية."
   },
   {
     "id": "t23",

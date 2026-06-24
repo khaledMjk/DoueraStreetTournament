@@ -26,6 +26,12 @@ export default function Groups() {
               <h2 className="text-xl font-extrabold text-pitch-900">
                 {lang === "ar" ? group.nameAr : group.name}
               </h2>
+              {(lang === "ar" ? group.noteAr : group.note) && (
+                <p className="mt-2 rounded-lg border-s-4 border-gold-400 bg-sand-100 px-3 py-2 text-sm leading-snug text-pitch-600">
+                  <span aria-hidden="true">ℹ️ </span>
+                  {lang === "ar" ? group.noteAr : group.note}
+                </p>
+              )}
               <div className="mt-4">
                 {group.standings.length === 0 ? (
                   <EmptyState message={t("teams.noTeams")} />
