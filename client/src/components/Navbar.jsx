@@ -51,14 +51,17 @@ export default function Navbar() {
           <LanguageSwitcher />
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          className="md:hidden flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 text-white cursor-pointer"
-          aria-label="Menu"
-        >
-          <span className="text-xl">{open ? "✕" : "☰"}</span>
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 text-white cursor-pointer"
+            aria-label="Menu"
+          >
+            <span className="text-xl">{open ? "✕" : "☰"}</span>
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -78,9 +81,6 @@ export default function Navbar() {
               </NavLink>
             ))}
           </nav>
-          <div className="pt-3">
-            <LanguageSwitcher />
-          </div>
         </div>
       )}
     </header>
