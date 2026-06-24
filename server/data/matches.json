@@ -1254,9 +1254,9 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t7",
     "awayTeamId": "t25",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 3,
+    "awayScore": 1,
+    "status": "finished",
     "scorers": []
   },
   {
@@ -1270,9 +1270,9 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t6",
     "awayTeamId": "t4",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 3,
+    "awayScore": 5,
+    "status": "finished",
     "scorers": []
   },
   {
@@ -1286,10 +1286,12 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t21",
     "awayTeamId": "t11",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "scorers": []
+    "homeScore": 2,
+    "awayScore": 2,
+    "status": "finished",
+    "scorers": [],
+    "note": "Score final 2-2 ; Aïn Naâdja se qualifie aux tirs au but (1-3).",
+    "noteAr": "انتهت المباراة بالتعادل 2-2؛ تأهّلت عين النعجة بركلات الترجيح (1-3)."
   },
   {
     "id": "m80",
@@ -1302,9 +1304,9 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t17",
     "awayTeamId": "t34",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 4,
+    "awayScore": 7,
+    "status": "finished",
     "scorers": []
   }
 ]
