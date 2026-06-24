@@ -17,6 +17,7 @@ export default function Navbar() {
     { to: "/teams", label: t("nav.teams") },
     { to: "/groups", label: t("nav.groups") },
     { to: "/matches", label: t("nav.matches") },
+    { to: "/bracket", label: t("nav.bracket") },
     { to: "/stats", label: t("nav.stats") },
   ];
 

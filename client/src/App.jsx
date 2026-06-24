@@ -6,6 +6,7 @@ import Teams from "./pages/Teams";
 import TeamDetail from "./pages/TeamDetail";
 import Groups from "./pages/Groups";
 import Matches from "./pages/Matches";
+import Bracket from "./pages/Bracket";
 import Stats from "./pages/Stats";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="teams/:id" element={<TeamDetail />} />
           <Route path="groups" element={<Groups />} />
           <Route path="matches" element={<Matches />} />
+          <Route path="bracket" element={<Bracket />} />
           <Route path="stats" element={<Stats />} />
         </Route>
       </Routes>

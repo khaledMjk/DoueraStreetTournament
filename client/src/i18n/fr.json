@@ -5,7 +5,22 @@
     "teams": "Équipes",
     "groups": "Classements",
     "matches": "Matchs",
+    "bracket": "Tableau",
     "stats": "Statistiques"
+  },
+  "bracket": {
+    "title": "Tableau final",
+    "subtitle": "Le parcours complet de la phase à élimination directe, des 32es à la finale.",
+    "r32": "32es de finale",
+    "r16": "16es de finale",
+    "qf": "Quarts de finale",
+    "sf": "Demi-finales",
+    "final": "Finale",
+    "third": "Match pour la 3e place",
+    "winnerOf": "Vainqueur",
+    "loserOf": "Perdant",
+    "penalties": "TAB",
+    "scrollHint": "Faites défiler horizontalement pour voir tout le tableau →"
   },
   "common": {
     "loading": "Chargement...",
