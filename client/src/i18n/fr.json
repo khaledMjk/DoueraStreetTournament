@@ -100,12 +100,18 @@
   },
   "stats": {
     "title": "Statistiques",
-    "subtitle": "Meilleurs buteurs du tournoi.",
+    "subtitle": "Buteurs, meilleure attaque et meilleure défense du tournoi.",
     "topScorers": "Classement des buteurs",
     "rank": "Rang",
     "player": "Joueur",
     "team": "Équipe",
     "goals": "Buts",
-    "noScorers": "Aucun but marqué pour le moment."
+    "noScorers": "Aucun but marqué pour le moment.",
+    "bestAttack": "Meilleure attaque",
+    "bestDefense": "Meilleure défense",
+    "goalsFor": "Buts marqués",
+    "goalsAgainst": "Buts encaissés",
+    "played": "Joués",
+    "noData": "Aucune donnée pour le moment."
   }
 }
