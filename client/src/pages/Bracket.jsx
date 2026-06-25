@@ -99,8 +99,8 @@ function resolveTie(code, ctx) {
   const m = ctx.byCode[code];
   if (tie.round === "r32" && m) {
     return {
-      a: { teamId: m.homeTeamId, score: m.homeScore },
-      b: { teamId: m.awayTeamId, score: m.awayScore },
+      a: { teamId: m.homeTeamId, label: ctx.lang === "ar" ? m.homeLabelAr : m.homeLabel, score: m.homeScore },
+      b: { teamId: m.awayTeamId, label: ctx.lang === "ar" ? m.awayLabelAr : m.awayLabel, score: m.awayScore },
       winnerId: m.winnerTeamId ?? null,
       status: m.status,
       penalties: isPenalty(m.note),
