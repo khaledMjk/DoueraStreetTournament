@@ -13,12 +13,12 @@ import { Loading, ErrorMessage } from "../components/StatusMessage";
 // matching `code`, so the tree fills in automatically as results are entered.
 const TIES = {
   "R32-1": { round: "r32", a: { seed: "2A" }, b: { seed: "2B" } },
-  "R32-2": { round: "r32", a: { seed: "1E" }, b: { seed: "3F" } },
+  "R32-2": { round: "r32", a: { seed: "2A" }, b: { seed: "3F" } },
   "R32-3": { round: "r32", a: { seed: "1F" }, b: { seed: "2C" } },
   "R32-4": { round: "r32", a: { seed: "1C" }, b: { seed: "2F" } },
   "R32-5": { round: "r32", a: { seed: "1I" }, b: { seed: "3H" } },
   "R32-6": { round: "r32", a: { seed: "2E" }, b: { seed: "2I" } },
-  "R32-7": { round: "r32", a: { seed: "1A" }, b: { seed: "3E" } },
+  "R32-7": { round: "r32", a: { seed: "1E" }, b: { seed: "3A" } },
   "R32-8": { round: "r32", a: { seed: "1L" }, b: { seed: "3K" } },
   "R32-9": { round: "r32", a: { seed: "1D" }, b: { seed: "3I" } },
   "R32-10": { round: "r32", a: { seed: "1G" }, b: { seed: "3A" } },
@@ -29,10 +29,10 @@ const TIES = {
   "R32-15": { round: "r32", a: { seed: "1K" }, b: { seed: "3L" } },
   "R32-16": { round: "r32", a: { seed: "2D" }, b: { seed: "2G" } },
 
-  "R16-1": { round: "r16", a: { win: "R32-2" }, b: { win: "R32-5" } },
+  "R16-1": { round: "r16", a: { win: "R32-5" }, b: { win: "R32-7" } },
   "R16-2": { round: "r16", a: { win: "R32-1" }, b: { win: "R32-3" } },
   "R16-3": { round: "r16", a: { win: "R32-4" }, b: { win: "R32-6" } },
-  "R16-4": { round: "r16", a: { win: "R32-7" }, b: { win: "R32-8" } },
+  "R16-4": { round: "r16", a: { win: "R32-2" }, b: { win: "R32-8" } },
   "R16-5": { round: "r16", a: { win: "R32-11" }, b: { win: "R32-12" } },
   "R16-6": { round: "r16", a: { win: "R32-9" }, b: { win: "R32-10" } },
   "R16-7": { round: "r16", a: { win: "R32-14" }, b: { win: "R32-16" } },
@@ -52,7 +52,7 @@ const TIES = {
 
 // Vertical ordering of each column so every box lines up with its feeders.
 const LEFT = [
-  { round: "r32", codes: ["R32-2", "R32-5", "R32-1", "R32-3", "R32-9", "R32-10", "R32-11", "R32-12"] },
+  { round: "r32", codes: ["R32-5", "R32-7", "R32-1", "R32-3", "R32-9", "R32-10", "R32-11", "R32-12"] },
   { round: "r16", codes: ["R16-1", "R16-2", "R16-6", "R16-5"] },
   { round: "qf", codes: ["QF-1", "QF-2"] },
   { round: "sf", codes: ["SF-1"] },
@@ -61,7 +61,7 @@ const RIGHT = [
   { round: "sf", codes: ["SF-2"] },
   { round: "qf", codes: ["QF-3", "QF-4"] },
   { round: "r16", codes: ["R16-3", "R16-4", "R16-7", "R16-8"] },
-  { round: "r32", codes: ["R32-4", "R32-6", "R32-7", "R32-8", "R32-14", "R32-16", "R32-13", "R32-15"] },
+  { round: "r32", codes: ["R32-4", "R32-6", "R32-2", "R32-8", "R32-14", "R32-16", "R32-13", "R32-15"] },
 ];
 
 const HEADER_H = "h-9";
@@ -237,6 +237,9 @@ export default function Bracket() {
     <div>
       <PageHeader title={t("bracket.title")} subtitle={t("bracket.subtitle")} />
       <div className="mx-auto max-w-6xl px-4 py-8">
+        <p className="mx-auto mb-4 max-w-2xl rounded-lg border border-gold-200 bg-gold-50 px-3 py-2 text-center text-xs text-pitch-700">
+          {t("bracket.uncertainNote")}
+        </p>
         <p className="mb-4 text-center text-xs text-pitch-400 sm:hidden">{t("bracket.scrollHint")}</p>
         <div className="overflow-x-auto pb-4">
           <div dir="ltr" className="mx-auto flex w-max items-stretch">

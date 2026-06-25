@@ -20,7 +20,8 @@
     "winnerOf": "Vainqueur",
     "loserOf": "Perdant",
     "penalties": "TAB",
-    "scrollHint": "Faites défiler horizontalement pour voir tout le tableau →"
+    "scrollHint": "Faites défiler horizontalement pour voir tout le tableau →",
+    "uncertainNote": "Les croisements des prochains tours ne sont pas encore confirmés : l'enchaînement d'un tour à l'autre reste à préciser."
   },
   "common": {
     "loading": "Chargement...",
