@@ -1337,11 +1337,11 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t10",
     "awayTeamId": "t34",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 3,
+    "awayScore": 5,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t34"
   },
   {
     "id": "m82",
@@ -1355,11 +1355,11 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t4",
     "awayTeamId": "t11",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 3,
+    "awayScore": 5,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t11"
   },
   {
     "id": "m83",
@@ -1373,11 +1373,11 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t48",
     "awayTeamId": "t3",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 1,
+    "awayScore": 5,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t3"
   },
   {
     "id": "m84",
@@ -1391,11 +1391,11 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t33",
     "awayTeamId": "t18",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 3,
+    "awayScore": 5,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t18"
   },
   {
     "id": "m85",
