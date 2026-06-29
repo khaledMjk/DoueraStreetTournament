@@ -7,48 +7,11 @@ import { useTeams } from "../hooks/useTeams";
 import { findTeam, teamName } from "../utils/teams";
 import { Loading, ErrorMessage } from "../components/StatusMessage";
 
-// Static knockout structure (matches the official bracket). Each tie is keyed
-// by its code; R32 ties carry the group-seed of each side, later rounds point
-// at the feeding ties. Real teams/scores are pulled from matches.json by the
-// matching `code`, so the tree fills in automatically as results are entered.
-const TIES = {
-  "R32-1": { round: "r32", a: { seed: "2A" }, b: { seed: "2B" } },
-  "R32-2": { round: "r32", a: { seed: "1E" }, b: { seed: "3F" } },
-  "R32-3": { round: "r32", a: { seed: "1F" }, b: { seed: "2C" } },
-  "R32-4": { round: "r32", a: { seed: "1C" }, b: { seed: "2F" } },
-  "R32-5": { round: "r32", a: { seed: "1I" }, b: { seed: "3H" } },
-  "R32-6": { round: "r32", a: { seed: "2E" }, b: { seed: "2I" } },
-  "R32-7": { round: "r32", a: { seed: "1A" }, b: { seed: "3E" } },
-  "R32-8": { round: "r32", a: { seed: "1L" }, b: { seed: "3K" } },
-  "R32-9": { round: "r32", a: { seed: "1D" }, b: { seed: "3I" } },
-  "R32-10": { round: "r32", a: { seed: "1G" }, b: { seed: "3A" } },
-  "R32-11": { round: "r32", a: { seed: "2K" }, b: { seed: "2L" } },
-  "R32-12": { round: "r32", a: { seed: "1H" }, b: { seed: "2J" } },
-  "R32-13": { round: "r32", a: { seed: "1B" }, b: { seed: "3G" } },
-  "R32-14": { round: "r32", a: { seed: "1J" }, b: { seed: "2H" } },
-  "R32-15": { round: "r32", a: { seed: "1K" }, b: { seed: "3L" } },
-  "R32-16": { round: "r32", a: { seed: "2D" }, b: { seed: "2G" } },
-
-  "R16-1": { round: "r16", a: { win: "R32-2" }, b: { win: "R32-5" } },
-  "R16-2": { round: "r16", a: { win: "R32-1" }, b: { win: "R32-3" } },
-  "R16-3": { round: "r16", a: { win: "R32-4" }, b: { win: "R32-6" } },
-  "R16-4": { round: "r16", a: { win: "R32-7" }, b: { win: "R32-8" } },
-  "R16-5": { round: "r16", a: { win: "R32-11" }, b: { win: "R32-12" } },
-  "R16-6": { round: "r16", a: { win: "R32-9" }, b: { win: "R32-10" } },
-  "R16-7": { round: "r16", a: { win: "R32-14" }, b: { win: "R32-16" } },
-  "R16-8": { round: "r16", a: { win: "R32-13" }, b: { win: "R32-15" } },
-
-  "QF-1": { round: "qf", a: { win: "R16-1" }, b: { win: "R16-2" } },
-  "QF-2": { round: "qf", a: { win: "R16-6" }, b: { win: "R16-5" } },
-  "QF-3": { round: "qf", a: { win: "R16-3" }, b: { win: "R16-4" } },
-  "QF-4": { round: "qf", a: { win: "R16-7" }, b: { win: "R16-8" } },
-
-  "SF-1": { round: "sf", a: { win: "QF-1" }, b: { win: "QF-2" } },
-  "SF-2": { round: "sf", a: { win: "QF-3" }, b: { win: "QF-4" } },
-
-  PF: { round: "pf", a: { lose: "SF-1" }, b: { lose: "SF-2" } },
-  FINALE: { round: "final", a: { win: "SF-1" }, b: { win: "SF-2" } },
-};
+// The knockout tree is driven entirely by the official match records in
+// matches.json: each tie is looked up by its `code`, real teams and scores
+// come straight from the record, and the feed-in labels ("Vainqueur R32-2",
+// "Perdant SF-1") are the ones stored on each match. Nothing here invents
+// seedings — a tie with no match record yet simply renders empty.
 
 // Vertical ordering of each column so every box lines up with its feeders.
 const LEFT = [
@@ -69,6 +32,16 @@ const BOX_H = 760; // pixel height of each round column; drives bracket alignmen
 
 const isPenalty = (note) => /tirs au but|الترجيح/.test(note || "");
 
+// Parse a stored feed-in label like "Vainqueur R32-2" / "Perdant SF-1" (or the
+// Arabic الفائز / الخاسر) into the feeding tie and whether it points at the
+// winner or loser, so a decided feeder can auto-fill the next box.
+function parseFeeder(label) {
+  const m = /(Vainqueur|Perdant|الفائز|الخاسر)\s+([A-Z0-9-]+)/.exec(label || "");
+  if (!m) return null;
+  const type = m[1] === "Perdant" || m[1] === "الخاسر" ? "lose" : "win";
+  return { type, code: m[2] };
+}
+
 function winnerOf(code, byCode) {
   return byCode[code]?.winnerTeamId ?? null;
 }
@@ -79,39 +52,35 @@ function loserOf(code, byCode) {
   return m.homeTeamId === m.winnerTeamId ? m.awayTeamId : m.homeTeamId;
 }
 
-// Resolve a feeder slot into a concrete team (if decided) or a text label.
-function resolveSlot(slot, ctx) {
-  const { byCode, t } = ctx;
-  if (slot.seed) return { seed: slot.seed };
-  if (slot.win) {
-    const w = winnerOf(slot.win, byCode);
-    return w ? { teamId: w } : { label: `${t("bracket.winnerOf")} ${slot.win}` };
+function labelFor(m, side, lang) {
+  const key = side === "a" ? "home" : "away";
+  return (lang === "ar" && m[`${key}LabelAr`]) || m[`${key}Label`] || null;
+}
+
+// Resolve one side of a tie to a concrete team (when the record names it, or a
+// decided feeder lets us fill it in) or fall back to the stored label text.
+function resolveSide(m, side, ctx) {
+  const key = side === "a" ? "home" : "away";
+  const score = m[`${key}Score`] ?? null;
+  const directId = m[`${key}TeamId`];
+  if (directId) return { teamId: directId, score };
+  const feeder = parseFeeder(m[`${key}Label`]);
+  if (feeder) {
+    const tid = feeder.type === "win" ? winnerOf(feeder.code, ctx.byCode) : loserOf(feeder.code, ctx.byCode);
+    if (tid) return { teamId: tid, score };
   }
-  if (slot.lose) {
-    const l = loserOf(slot.lose, byCode);
-    return l ? { teamId: l } : { label: `${t("bracket.loserOf")} ${slot.lose}` };
-  }
-  return {};
+  return { label: labelFor(m, side, ctx.lang), score };
 }
 
 function resolveTie(code, ctx) {
-  const tie = TIES[code];
   const m = ctx.byCode[code];
-  if (tie.round === "r32" && m) {
-    return {
-      a: { teamId: m.homeTeamId, score: m.homeScore },
-      b: { teamId: m.awayTeamId, score: m.awayScore },
-      winnerId: m.winnerTeamId ?? null,
-      status: m.status,
-      penalties: isPenalty(m.note),
-    };
-  }
+  if (!m) return null; // tie not reported yet — render an empty box
   return {
-    a: { ...resolveSlot(tie.a, ctx), score: m?.homeScore ?? null },
-    b: { ...resolveSlot(tie.b, ctx), score: m?.awayScore ?? null },
-    winnerId: m?.winnerTeamId ?? null,
-    status: m?.status,
-    penalties: isPenalty(m?.note),
+    a: resolveSide(m, "a", ctx),
+    b: resolveSide(m, "b", ctx),
+    winnerId: m.winnerTeamId ?? null,
+    status: m.status,
+    penalties: isPenalty(m.note),
   };
 }
 
@@ -127,16 +96,12 @@ function Side({ c, isWinner, dim, ctx }) {
       {team ? (
         <TeamBadge team={team} label={name} size="sm" />
       ) : (
-        <span
-          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
-            c.seed ? "bg-pitch-100 text-pitch-600" : "border border-dashed border-pitch-200 text-pitch-300"
-          }`}
-        >
-          {c.seed || "?"}
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-dashed border-pitch-200 text-[10px] font-bold text-pitch-300">
+          ?
         </span>
       )}
-      <span className="min-w-0 flex-1 truncate text-xs leading-tight" title={name || c.seed || ""}>
-        {name || <span className="italic text-pitch-400">{c.label || c.seed}</span>}
+      <span className="min-w-0 flex-1 truncate text-xs leading-tight" title={name || ""}>
+        {name || <span className="italic text-pitch-400">{c.label || ""}</span>}
       </span>
       {c.score != null && (
         <span
@@ -153,6 +118,19 @@ function Side({ c, isWinner, dim, ctx }) {
 
 function TieBox({ code, highlight, ctx }) {
   const r = resolveTie(code, ctx);
+  if (!r) {
+    // No match record for this tie yet: show the slot without inventing teams.
+    return (
+      <div className="w-44 overflow-hidden rounded-lg border border-dashed border-pitch-200 bg-white/60">
+        <div className="bg-pitch-50 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-pitch-300">
+          {code}
+        </div>
+        <Side c={{}} ctx={ctx} />
+        <div className="h-px bg-pitch-100" />
+        <Side c={{}} ctx={ctx} />
+      </div>
+    );
+  }
   const aWin = r.winnerId && r.a.teamId === r.winnerId;
   const bWin = r.winnerId && r.b.teamId === r.winnerId;
   const decided = !!r.winnerId;
