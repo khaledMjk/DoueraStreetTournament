@@ -1485,7 +1485,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur R16-1",
+    "homeLabelAr": "الفائز R16-1",
+    "awayLabel": "Vainqueur R16-2",
+    "awayLabelAr": "الفائز R16-2"
   },
   {
     "id": "m90",
@@ -1503,7 +1507,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur R16-6",
+    "homeLabelAr": "الفائز R16-6",
+    "awayLabel": "Vainqueur R16-5",
+    "awayLabelAr": "الفائز R16-5"
   },
   {
     "id": "m91",
@@ -1521,7 +1529,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur R16-3",
+    "homeLabelAr": "الفائز R16-3",
+    "awayLabel": "Vainqueur R16-4",
+    "awayLabelAr": "الفائز R16-4"
   },
   {
     "id": "m92",
@@ -1539,7 +1551,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur R16-7",
+    "homeLabelAr": "الفائز R16-7",
+    "awayLabel": "Vainqueur R16-8",
+    "awayLabelAr": "الفائز R16-8"
   },
   {
     "id": "m93",
@@ -1557,7 +1573,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur QF-1",
+    "homeLabelAr": "الفائز QF-1",
+    "awayLabel": "Vainqueur QF-2",
+    "awayLabelAr": "الفائز QF-2"
   },
   {
     "id": "m94",
@@ -1575,7 +1595,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur QF-3",
+    "homeLabelAr": "الفائز QF-3",
+    "awayLabel": "Vainqueur QF-4",
+    "awayLabelAr": "الفائز QF-4"
   },
   {
     "id": "m95",
@@ -1593,7 +1617,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Perdant SF-1",
+    "homeLabelAr": "الخاسر SF-1",
+    "awayLabel": "Perdant SF-2",
+    "awayLabelAr": "الخاسر SF-2"
   },
   {
     "id": "m96",
@@ -1611,7 +1639,11 @@
     "awayScore": null,
     "status": "scheduled",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": null,
+    "homeLabel": "Vainqueur SF-1",
+    "homeLabelAr": "الفائز SF-1",
+    "awayLabel": "Vainqueur SF-2",
+    "awayLabelAr": "الفائز SF-2"
   },
   {
     "id": "m97",
