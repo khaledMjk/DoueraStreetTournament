@@ -15,8 +15,8 @@ import { Loading, ErrorMessage } from "../components/StatusMessage";
 
 // Vertical ordering of each column so every box lines up with its feeders.
 const LEFT = [
-  { round: "r32", codes: ["R32-2", "R32-5", "R32-1", "R32-3", "R32-9", "R32-10", "R32-11", "R32-12"] },
-  { round: "r16", codes: ["R16-1", "R16-2", "R16-6", "R16-5"] },
+  { round: "r32", codes: ["R32-5", "R32-7", "R32-1", "R32-3", "R32-11", "R32-8", "R32-15", "R32-12"] },
+  { round: "r16", codes: ["R16-1", "R16-2", "R16-5", "R16-6"] },
   { round: "qf", codes: ["QF-1", "QF-2"] },
   { round: "sf", codes: ["SF-1"] },
 ];
@@ -24,7 +24,7 @@ const RIGHT = [
   { round: "sf", codes: ["SF-2"] },
   { round: "qf", codes: ["QF-3", "QF-4"] },
   { round: "r16", codes: ["R16-3", "R16-4", "R16-7", "R16-8"] },
-  { round: "r32", codes: ["R32-4", "R32-6", "R32-7", "R32-8", "R32-14", "R32-16", "R32-13", "R32-15"] },
+  { round: "r32", codes: ["R32-4", "R32-6", "R32-9", "R32-2", "R32-14", "R32-16", "R32-10", "R32-13"] },
 ];
 
 const HEADER_H = "h-9";
