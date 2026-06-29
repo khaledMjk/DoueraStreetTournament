@@ -215,6 +215,9 @@ export default function Bracket() {
     <div>
       <PageHeader title={t("bracket.title")} subtitle={t("bracket.subtitle")} />
       <div className="mx-auto max-w-6xl px-4 py-8">
+        <p className="mx-auto mb-4 max-w-2xl rounded-lg border border-gold-200 bg-gold-50 px-4 py-2 text-center text-xs leading-relaxed text-pitch-600">
+          ⚠️ {t("bracket.notice")}
+        </p>
         <p className="mb-4 text-center text-xs text-pitch-400 sm:hidden">{t("bracket.scrollHint")}</p>
         <div className="overflow-x-auto pb-4">
           <div dir="ltr" className="mx-auto flex w-max items-stretch">
