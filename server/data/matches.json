@@ -1445,11 +1445,11 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t38",
     "awayTeamId": "t26",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t26"
   },
   {
     "id": "m88",
