@@ -1463,11 +1463,13 @@
     "venueAr": "الملعب البلدي عبد القادر حوني",
     "homeTeamId": "t41",
     "awayTeamId": "t7",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "finished",
     "scorers": [],
-    "winnerTeamId": null
+    "winnerTeamId": "t7",
+    "note": "Score final 0-0 ; Aïn Eddezaïr se qualifie aux tirs au but (3-1).",
+    "noteAr": "انتهت المباراة بالتعادل 0-0؛ تأهّل عين الدزاير بركلات الترجيح (3-1)."
   },
   {
     "id": "m89",
